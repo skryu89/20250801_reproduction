@@ -60,3 +60,72 @@
 .p5 { top: 260px; left: 400px; z-index: 1; }
 .p6 { top: 260px; left: 400px; z-index: 1; }
 
+
+.text {
+  background-color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.text p {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  padding-bottom: 0.5em;  
+}
+
+
+.text p span {
+  font-size: 5rem;
+}
+
+
+.requirements {
+  background: #fff; 
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1565c0; 
+  margin-bottom: 40px;
+}
+
+.button-box1 {
+  border: 2px solid #d40020; 
+  background: #fff5f7 url('assets/img/ダウンロード (11).svg') no-repeat center/cover; 
+  padding: 5rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 5rem auto;
+  position: relative;
+}
+
+.recruit-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recruit-content {
+  display: inline-block;
+  position: relative;
+}
+
+.recruit-jp {
+  font-size: 2.8rem;
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.recruit-en {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
