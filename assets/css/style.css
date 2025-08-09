@@ -24,25 +24,59 @@
 
 
 .header-logo {
-  display: flex;
-  padding-left: 70px;
-  font-size: 2rem;
+  position: fixed;
+  top: 10px;
+  left: 70px;
+  z-index: 999; 
 }
+
+.header-logo a {
+  text-decoration: none; 
+}
+
 
 .logo {
-  width: 270px; 
+  width: 150px; 
+  height: auto;
 }
 
+
 .font-en {
-  
+  display: inline-block;
+  width: auto;
+  font-size: 15px;
+  padding-left: 10px;
 }
+
+
 
 .visual-area {
   position: relative;
   width: 100%;
   height: 600px;
+  top: 20px;
   background: #fff;
   overflow: hidden;
+}
+
+.NEW-MID,
+.RECRUIT {
+  position: absolute;  
+  right: 100px;           
+  color: #000;           
+}
+
+.NEW-MID {
+  top: 50px;
+  font-weight: bold;
+}
+
+.RECRUIT {
+  top: 50px; 
+  right: 120px;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: italic;
 }
 
 
@@ -63,14 +97,19 @@
   width: 210px;
 }
 
+.letter.i img {
+  width: 210px;
+}
+
+
 
 .s1 { top: 10px; left: 50px; }
 .h1 { top: 100px; left: 250px; z-index: 5;}
 .o  { top: 30px; left: 480px; z-index: 5;}
 .s2 { top: 270px; left: 500px; }
-.h2 { top: 330px; left: 700px; }
-.i  { top: 200px; left: 900px; }
-.n  { top: 150px; left: 1050px; }
+.h2 { top: 380px; left: 700px; }
+.i  { top: 310px; left: 860px; }
+.n  { top: 250px; left: 1050px; }
 
 
 .plant { top: 64px; left: 168px; z-index: 1; }
@@ -78,8 +117,8 @@
 .p2 { top: 320px; left: 220px; z-index: 1; }
 .p3 { top: 150px; left: 370px; z-index: 1; }
 .p4 { top: 170px; left: 600px; z-index: 10; }
-.p5 { top: 260px; left: 400px; z-index: 1; }
-.p6 { top: 260px; left: 400px; z-index: 1; }
+.p5 { top: 20px; left: 680px; z-index: 1; }
+.p6 { top: 210px; left: 950px; z-index: 1; }
 
 .plant {
   position: absolute;
@@ -107,6 +146,18 @@
 .person.p4{
   position: absolute;
   width: 100px;
+  height: auto;
+}
+
+.person.p5 {
+  position: absolute;
+  width: 250px;
+  height: auto;
+}
+
+.person.p6 {
+  position: absolute;
+  width: 150px;
   height: auto;
 }
 
@@ -164,7 +215,7 @@
   position: relative;
 }
 
-.recruit-jp {
+.overlay-text1 {
   font-size: 2.8rem;
   font-weight: bold;
   border-bottom: 3px solid #000;
@@ -173,7 +224,7 @@
   margin-bottom: 1rem;
 }
 
-.recruit-en {
+.recruit-en1 {
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 0.1em;
