@@ -32,6 +32,7 @@
 
 .header-logo a {
   text-decoration: none; 
+  color: #000;
 }
 
 
@@ -72,6 +73,7 @@
 }
 
 .RECRUIT {
+  color: #000;
   top: 50px; 
   right: 120px;
   font-size: 30px;
@@ -162,24 +164,74 @@
 }
 
 
-.text {
-  background-color: #fff;
-  text-align: center;
-  padding: 100px 20px;
+.home_news--wrap {
+  position: absolute;
+  display: flex;
+  left: 100px;
 }
 
-.text p {
-  font-size: 3rem;
+.news_list1 a {
+  color: #fff;
+  font-size: 1rem;
+  background-color: #D92B44;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
   text-align: center;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.news_list2 a {
+  color: #D92B44;
+  font-size: 1rem;
+  background-color: #FFEDEF;
+  text-decoration: none;
+}
+
+.news_list3 a {
+  color: #000;
+  font-size: 1rem;
+  background-color: #FFEDEF;
+  text-decoration: none;
+}
+
+.text {
+  display: inline-block;
+  padding-top: 100px;
+  padding-left: 100px;
+  font-size: 3rem;
+  background-color: #fff;
+  text-align: left;
   font-weight: bold;
   text-decoration: underline;
+  letter-spacing: 0.2em; 
+}
+
+
+.text1 {
+  font-size: 4rem;
+  text-align: left;
+  font-weight: bold;
   text-decoration-color: #000000;
   padding-bottom: 0.5em;  
 }
 
+.text2 {
+  font-size: 3.5rem;
+  text-align: left;
+  font-weight: bold;
+  text-decoration-color: #000000;
+  padding-bottom: 0.5em;  
+}
 
-.text p span {
+.text3 {
   font-size: 5rem;
+  text-align: left;
+  font-weight: bold;
+  text-decoration-color: #000000;
+  padding-bottom: 0.5em;  
 }
 
 
