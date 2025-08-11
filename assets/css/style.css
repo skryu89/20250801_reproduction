@@ -1,6 +1,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .marquee-container {
@@ -171,7 +172,6 @@ html, body {
   height: auto;
 }
 
-
 .home_news--wrap {
   position: absolute;
   display: flex;
@@ -229,15 +229,6 @@ img.message {
   right: 10rem;
 }
 
-.vertical-text {
-  writing-mode: vertical-rl;
-  padding-left: 800px;
-}
-
-.red-text {
-  color:#D92B44;
-}
-
 .text {
   display: inline-block;
   padding-top: 100px;
@@ -284,6 +275,39 @@ img.message {
   text-decoration-color: red;
   line-height: 30px;
   letter-spacing: 5px;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  padding-left: 800px;
+}
+
+.red-text {
+  color:#D92B44;
+}
+
+.sub-text {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  margin-top: 70px;
+  background-color: red;
+  width: 100%;
+}
+
+.text-part1 {
+ color: #fff;
+ font-size: 30px;
+}
+
+.text-part2 {
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+}
+
+.text-part3 {
+  color: #fff;
 }
 
 .requirements {
