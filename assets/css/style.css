@@ -357,3 +357,12 @@ img.message {
   letter-spacing: 0.1em;
 }
 
+
+.company-seniors img {
+  height: auto;
+  display: block;
+  width: 200px;
+  margin-top: 300px;
+}
+
+
