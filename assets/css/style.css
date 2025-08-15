@@ -287,28 +287,60 @@ img.message {
 }
 
 .sub-text {
-  position: absolute;
+  position: relative;
   z-index: 99;
-  display: flex;
-  margin-top: 70px;
+  top: 80px;
+  height: 250px;
   background-color: red;
   width: 100%;
 }
 
 .text-part1 {
- color: #fff;
- font-size: 30px;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 100px;
 }
 
 .text-part2 {
+  position: absolute;
+  top: -50px;
+  left: 400px;
   color: #fff;
-  text-align: center;
-  font-size: 80px;
+  font-size: 100px;
+  font-weight: 600;
 }
 
 .text-part3 {
+  position: absolute;
+  top: 80px;
+  right: 30px;
   color: #fff;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
+
+.company-seniors img {
+  height: auto;
+  display: block;
+  width: 200px;
+  margin-top: 300px;
+  gap : 10px;
+}
+
+.company-seniors .slick-slide {
+  background-color: #d40020;
+  margin: 0 10px; 
+}
+
+.company-seniors .slick-list {
+  margin: 0 0px; 
+}
+
 
 .requirements {
   background: #fff; 
@@ -322,6 +354,10 @@ img.message {
   margin-bottom: 40px;
 }
 
+.buttons {
+  display :flex;
+}
+
 .button-box1 {
   border: 2px solid #d40020; 
   background: #fff5f7 url('assets/img/ダウンロード (11).svg') no-repeat center/cover; 
@@ -329,16 +365,6 @@ img.message {
   text-align: center;
   max-width: 800px;
   margin: 5rem auto;
-  position: relative;
-}
-
-.recruit-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.recruit-content {
-  display: inline-block;
   position: relative;
 }
 
@@ -357,12 +383,167 @@ img.message {
   letter-spacing: 0.1em;
 }
 
-
-.company-seniors img {
-  height: auto;
-  display: block;
-  width: 200px;
-  margin-top: 300px;
+.button-box2 {
+  border: 2px solid #d40020; 
+  background: #fff5f7 url('assets/img/ダウンロード (11).svg') no-repeat center/cover; 
+  padding: 5rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 5rem auto;
+  position: relative;
 }
+
+.overlay-text2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.recruit-en2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.recruit-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recruit-content {
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+  .visual-area {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .NEW-MID,
+  .RECRUIT {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .letter {
+    position: static;
+    display: inline-block;
+    width: 40px;
+  }
+
+  .plant,
+  .person {
+    display: none; 
+  }
+
+  .company-seniors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-seniors div {
+    flex: none;
+    max-width: 80%;
+  }
+
+  .requirements .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .requirements .button-box1,
+  .requirements .button-box2 {
+    width: 100%;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .text4 {
+    font-size: 1.5rem;
+  }
+  
+  .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+  transform: rotate(0) translate(0, 0);
+}
+.hamburger span:nth-child(2) {
+  opacity: 1;
+}
+.hamburger span:nth-child(3) {
+  transform: rotate(0) translate(0, 0);
+}
+
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  z-index: 900;
+}
+
+}
+
 
 
