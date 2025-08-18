@@ -463,7 +463,8 @@ img.message {
   border: 30px solid red;  
   box-sizing: border-box;
   position: relative;
-  width: 100%;
+  width: 100vw;             
+  height: 100vh;  
   top: 0;
   right: 0;
 }
