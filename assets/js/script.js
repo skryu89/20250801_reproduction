@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(document).ready(function () {
+  // Slick slider
   $('.company-seniors').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -21,14 +22,9 @@ $(document).ready(function(){
     ]
   });
 
-
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.nav-menu');
-
-  if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      hamburger.classList.toggle('active');
-    });
-  }
+  $(".hamburger").on("click", function () {
+    $(this).toggleClass("open");     
+    $(".nav-menu").fadeToggle();  
+    $("body").toggleClass("menu-open");
+  });
 });
