@@ -434,6 +434,363 @@ img.message {
   overflow-x: hidden;
 }
 
+　
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #D92B44;     
+  color: #fff;                
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 8px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.page-wrapper {
+  border: 30px solid red;  
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.header-logo {
+  position: fixed;
+  top: 10px;
+  left: 70px;
+  z-index: 200; 
+}
+
+.header-logo a {
+  text-decoration: none; 
+  color: #000;
+}
+
+
+.logo {
+  width: 150px; 
+  height: auto;
+}
+
+
+.font-en {
+  display: inline-block;
+  width: auto;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.visual-area {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  top: 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.NEW-MID,
+.RECRUIT {
+  position: absolute;  
+  right: 100px;           
+  color: #000;           
+}
+
+.NEW-MID {
+  top: 50px;
+  font-weight: bold;
+}
+
+.RECRUIT {
+  color: #000;
+  top: 50px; 
+  right: 120px;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.letter  {
+  position: absolute;
+  width: 160px;
+}
+
+.letter img {
+  width: 200px;
+}
+
+.letter.o img {
+  width: 200px;
+}
+
+.letter.h2 img {
+  width: 160px;
+}
+
+.letter.i img {
+  width: 160px;
+}
+
+
+.s1 { top: 10px; left: 50px; }
+.h1 { top: 100px; left: 350px; z-index: 5;}
+.o  { top: 30px; left: 700px; z-index: 5;}
+.s2 { top: 270px; left: 10000px; }
+.h2 { top: 380px; left: 700px; }
+.i  { top: 310px; left: 900px; }
+.n  { top: 250px; left: 1050px; }
+
+
+.plant { top: 64px; left: 168px; z-index: 1; }
+.p1 { top: 150px; left: 60px; z-index: 1; }
+.p2 { top: 320px; left: 220px; z-index: 1; }
+.p3 { top: 150px; left: 370px; z-index: 1; }
+.p4 { top: 170px; left: 600px; z-index: 10; }
+.p5 { top: 20px; left: 680px; z-index: 1; }
+.p6 { top: 210px; left: 950px; z-index: 1; }
+
+
+.plant {
+  position: absolute;
+  width: 90px;
+}
+
+.person  {
+  position: absolute;
+  width: 80px;
+  height: auto;
+}
+
+.person.p2{
+  position: absolute;
+  width: 80px;
+  height: auto;
+}
+
+.person.p3{
+  position: absolute;
+  width: 90px;
+  height: auto;
+}
+
+.person.p4{
+  position: absolute;
+  width: 90px;
+  height: auto;
+}
+
+.person.p5 {
+  position: absolute;
+  width: 150px;
+  height: auto;
+}
+
+.person.p6 {
+  position: absolute;
+  width: 100px;
+  height: auto;
+}
+
+.home_news--wrap {
+  position: absolute;
+  display: flex;
+  left: 90px;
+}
+
+.news_list1 a {
+  color: #fff;
+  font-size: 1rem;
+  background-color: #D92B44;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.news_list2 a {
+  color: #D92B44;
+  font-size: 1rem;
+  background-color: #FFEDEF;
+  text-decoration: none;
+}
+
+.news_list3 a {
+  color: #000;
+  font-size: 1rem;
+  background-color: #FFEDEF;
+  text-decoration: none;
+}
+
+img.men {
+  position: absolute;
+  left: 50px;
+  width: 660px;
+  height: 600px;
+}
+
+img.pencil {
+  position: absolute;
+  right: 1rem;
+  width: 350px;
+}
+
+img.the-future {
+  position: absolute;
+  right: 10rem;
+  width: 700px;
+}
+
+img.message {
+  position: absolute;
+  right: 10rem;
+}
+
+.text {
+  display: inline-block;
+  padding-top: 100px;
+  padding-left: 100px;
+  font-size: 3rem;
+  background-color: #fff;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 0.2em; 
+}
+
+.text1 {
+  font-size: 4rem;
+  text-align: left;
+  font-weight: bold;
+  text-decoration-color: #000000;
+  padding-bottom: 0.5em;  
+}
+
+.text2 {
+  font-size: 3.5rem;
+  text-align: left;
+  font-weight: bold;
+  text-decoration-color: #000000;
+  padding-bottom: 0.5em;  
+}
+
+.text3 {
+  font-size: 5rem;
+  text-align: left;
+  font-weight: bold;
+  text-decoration-color: #000000;
+  padding-bottom: 0.5em;  
+}
+
+.text4 {
+  position: absolute;
+  right: 40rem;
+  top: 50rem;
+  font-size: 1rem;
+  writing-mode: vertical-rl;
+  text-decoration: overline;
+  text-decoration-color: red;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  padding-left: 800px;
+}
+
+.red-text {
+  color:#D92B44;
+}
+
+.sub-text {
+  position: relative;
+  z-index: 99;
+  top: 80px;
+  height: 250px;
+  background-color: red;
+  width: 100%;
+}
+
+.text-part1 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 100px;
+}
+
+.text-part2 {
+  position: absolute;
+  top: -50px;
+  left: 400px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.text-part3 {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.company-seniors img {
+  height: auto;
+  display: block;
+  width: 200px;
+  margin-top: 300px;
+  gap : 10px;
+}
+
+.company-seniors .slick-slide {
+  background-color: #d40020;
+  margin: 0 10px; 
+}
+
+.company-seniors .slick-list {
+  margin: 0 0px; 
+}
+
+
+.requirements {
+  background: #fff; 
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1565c0; 
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display :flex;
+}
+
   .visual-area {
     height: auto;
     padding: 20px 0;
@@ -446,14 +803,9 @@ img.message {
   }
 
   .letter {
-    position: static;
+    position: relative;
     display: inline-block;
     width: 40px;
-  }
-
-  .plant,
-  .person {
-    display: none; 
   }
 
   .company-seniors {
@@ -556,17 +908,13 @@ img.message {
    .nav-menu {
       box-sizing: border-box;
       position: fixed;
-      top: 80px;
       width: 100%;
       height: 100%;
       background-color: #fff;
-      opacity: 0.9;
+      opacity: 1.0;
       text-align: center;
       z-index: 9999;
-   }
-
-   body.menu-open {
-      overflow: hidden;
+      overflow-y: auto;
    }
 
   .nav-menu ul {
