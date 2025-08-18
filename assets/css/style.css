@@ -427,7 +427,7 @@ img.message {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   html, body {
   padding: 0;
   margin: 0;
@@ -467,6 +467,7 @@ img.message {
   height: 100vh;  
   top: 0;
   right: 0;
+  overflow: auto;
 }
 
 .header-logo {
@@ -481,57 +482,63 @@ img.message {
   color: #000;
 }
 
-
 .logo {
   width: 150px; 
   height: auto;
 }
 
-
 .font-en {
-  display: inline-block;
+  display: block;
   width: auto;
   font-size: 15px;
-  padding-left: 10px;
+  font-weight: 700;
+  padding-left: 0px;
+  top: 100px;
 }
 
 .visual-area {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 1000px;
   top: 20px;
   background: #fff;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .NEW-MID,
-.RECRUIT {
-  position: absolute;  
-  right: 100px;           
-  color: #000;           
+.RECRUIT {    
+  color: #b9b6b6;           
 }
 
 .NEW-MID {
-  top: 50px;
+  position: absolute;
+  top: 230px;
+  left: 30px;
   font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 10px;
+  white-space: nowrap; 
 }
 
 .RECRUIT {
-  color: #000;
-  top: 50px; 
-  right: 120px;
-  font-size: 30px;
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  display: block;
+  font-size: 80px;
   font-weight: 100;
+  letter-spacing: 12px;
   font-style: italic;
 }
 
+
 .letter  {
   position: absolute;
-  width: 160px;
+  width: 180px;
 }
 
 .letter img {
-  width: 200px;
+  width: 220px;
 }
 
 .letter.o img {
@@ -547,32 +554,22 @@ img.message {
 }
 
 
-.s1 { top: 10px; left: 50px; }
-.h1 { top: 100px; left: 350px; z-index: 5;}
-.o  { top: 30px; left: 700px; z-index: 5;}
-.s2 { top: 270px; left: 10000px; }
+.s1 { top: 8px; left: 20px; }
+.h1 { top: 70px; left: 220px; z-index: 1;}
+.o  { top: 20px; left: 450px; z-index: 1;}
+.s2 { top: 350px; left: -10px; }
 .h2 { top: 380px; left: 700px; }
 .i  { top: 310px; left: 900px; }
 .n  { top: 250px; left: 1050px; }
 
-
-.plant { top: 64px; left: 168px; z-index: 1; }
-.p1 { top: 150px; left: 60px; z-index: 1; }
-.p2 { top: 320px; left: 220px; z-index: 1; }
-.p3 { top: 150px; left: 370px; z-index: 1; }
-.p4 { top: 170px; left: 600px; z-index: 10; }
-.p5 { top: 20px; left: 680px; z-index: 1; }
-.p6 { top: 210px; left: 950px; z-index: 1; }
-
-
 .plant {
   position: absolute;
-  width: 90px;
+  width: 60px;
 }
 
 .person  {
   position: absolute;
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
@@ -584,7 +581,7 @@ img.message {
 
 .person.p3{
   position: absolute;
-  width: 90px;
+  width: 140px;
   height: auto;
 }
 
@@ -596,7 +593,7 @@ img.message {
 
 .person.p5 {
   position: absolute;
-  width: 150px;
+  width: 190px;
   height: auto;
 }
 
@@ -606,10 +603,21 @@ img.message {
   height: auto;
 }
 
+
+.plant { top: 72px; left: 130px; z-index: 1; }
+.p1 { top: 135px; left: 30px; z-index: 1; }
+.p2 { top: 300px; left: 220px; z-index: 1; }
+.p3 { top: 125px; left: 300px; z-index: 5; }
+.p4 { top: 170px; left: 300px; z-index: 10; }
+.p5 { top: 80px; left: 510px; z-index: 5; }
+.p6 { top: 210px; left: 950px; z-index: 1; }
+
+
 .home_news--wrap {
   position: absolute;
   display: flex;
   left: 90px;
+  top: 800px;
 }
 
 .news_list1 a {
@@ -639,32 +647,10 @@ img.message {
   text-decoration: none;
 }
 
-img.men {
-  position: absolute;
-  left: 50px;
-  width: 660px;
-  height: 600px;
-}
-
-img.pencil {
-  position: absolute;
-  right: 1rem;
-  width: 350px;
-}
-
-img.the-future {
-  position: absolute;
-  right: 10rem;
-  width: 700px;
-}
-
-img.message {
-  position: absolute;
-  right: 10rem;
-}
 
 .text {
-  display: inline-block;
+  position: absolute;
+  top: 1000px;
   padding-top: 100px;
   padding-left: 100px;
   font-size: 3rem;
@@ -672,7 +658,8 @@ img.message {
   text-align: left;
   font-weight: bold;
   text-decoration: underline;
-  letter-spacing: 0.2em; 
+  letter-spacing: 0.2em;
+  z-index: 5; 
 }
 
 .text1 {
@@ -709,6 +696,33 @@ img.message {
   text-decoration-color: red;
   line-height: 30px;
   letter-spacing: 5px;
+}
+
+img.men {
+  position: absolute;
+  left: 50px;
+  width: 660px;
+  height: 600px;
+}
+
+img.pencil {
+  position: absolute;
+  top:1000px;
+  right: 1rem;
+  width: 350px;
+}
+
+img.the-future {
+  position: absolute;
+  top: 1000px;
+  right: 10rem;
+  width: 700px;
+}
+
+img.message {
+  position: absolute;
+  top:1000px;
+  right: 10rem;
 }
 
 .vertical-text {
@@ -797,18 +811,7 @@ img.message {
     padding: 20px 0;
   }
 
-  .NEW-MID,
-  .RECRUIT {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .letter {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-  }
-
+  
   .company-seniors {
     flex-direction: column;
     align-items: center;
@@ -830,14 +833,6 @@ img.message {
     width: 100%;
   }
 
-  .text {
-    text-align: center;
-  }
-
-  .text4 {
-    font-size: 1.5rem;
-  }
-  
   .menu-button {
     padding-right: 0px;
   }
