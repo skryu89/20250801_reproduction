@@ -464,10 +464,9 @@ img.message {
   box-sizing: border-box;
   position: relative;
   width: 100vw;             
-  height: 100vh;  
+  height: 100vh; 
   top: 0;
   right: 0;
-  overflow: auto;
 }
 
 .header-logo {
@@ -499,7 +498,7 @@ img.message {
 .visual-area {
   position: relative;
   width: 100%;
-  height: 1000px;
+  height: auto;
   top: 20px;
   background: #fff;
   overflow: visible;
@@ -531,14 +530,13 @@ img.message {
   font-style: italic;
 }
 
-
-.letter  {
+.letter img {
   position: absolute;
-  width: 180px;
+  width: 220px;
 }
 
-.letter img {
-  width: 220px;
+.letter.h1 img {
+  width: 190px;
 }
 
 .letter.o img {
@@ -546,21 +544,25 @@ img.message {
 }
 
 .letter.h2 img {
-  width: 160px;
+  width: 200px;
 }
 
 .letter.i img {
-  width: 160px;
+  width: 170px;
+}
+
+.letter.n img {
+  width: 180px;
 }
 
 
 .s1 { top: 8px; left: 20px; }
-.h1 { top: 70px; left: 220px; z-index: 1;}
+.h1 { top: 70px; left: 240px; z-index: 1;}
 .o  { top: 20px; left: 450px; z-index: 1;}
 .s2 { top: 350px; left: -10px; }
-.h2 { top: 380px; left: 700px; }
-.i  { top: 310px; left: 900px; }
-.n  { top: 250px; left: 1050px; }
+.h2 { top: 470px; left: 180px; }
+.i  { top: 420px; left: 370px; }
+.n  { top: 350px; left: 520px; }
 
 .plant {
   position: absolute;
@@ -574,6 +576,7 @@ img.message {
 }
 
 .person.p2{
+  display: none;
   position: absolute;
   width: 80px;
   height: auto;
@@ -599,18 +602,18 @@ img.message {
 
 .person.p6 {
   position: absolute;
-  width: 100px;
+  width: 130px;
   height: auto;
 }
 
 
-.plant { top: 72px; left: 130px; z-index: 1; }
+.plant { top: 72px; left: 140px; z-index: 1; }
 .p1 { top: 135px; left: 30px; z-index: 1; }
 .p2 { top: 300px; left: 220px; z-index: 1; }
 .p3 { top: 125px; left: 300px; z-index: 5; }
-.p4 { top: 170px; left: 300px; z-index: 10; }
+.p4 { top: 390px; left: 200px; z-index: 10; }
 .p5 { top: 80px; left: 510px; z-index: 5; }
-.p6 { top: 210px; left: 950px; z-index: 1; }
+.p6 { top: 310px; left: 430px; z-index: 1; }
 
 
 .home_news--wrap {
@@ -650,16 +653,14 @@ img.message {
 
 .text {
   position: absolute;
-  top: 1000px;
-  padding-top: 100px;
-  padding-left: 100px;
+  top: 2000px;
   font-size: 3rem;
   background-color: #fff;
   text-align: left;
   font-weight: bold;
   text-decoration: underline;
   letter-spacing: 0.2em;
-  z-index: 5; 
+  z-index: 1; 
 }
 
 .text1 {
@@ -706,28 +707,25 @@ img.men {
 }
 
 img.pencil {
-  position: absolute;
-  top:1000px;
-  right: 1rem;
-  width: 350px;
+  display: none;
 }
 
 img.the-future {
-  position: absolute;
-  top: 1000px;
-  right: 10rem;
-  width: 700px;
+  display: none;
 }
 
 img.message {
-  position: absolute;
-  top:1000px;
-  right: 10rem;
+  display: none;
 }
 
 .vertical-text {
-  writing-mode: vertical-rl;
-  padding-left: 800px;
+  position: absolute;
+  top: 800px;
+  left: -1000px;
+  display: inline-block;
+  writing-mode: horizontal-tb; 
+  width: 100%;
+  
 }
 
 .red-text {
@@ -737,7 +735,7 @@ img.message {
 .sub-text {
   position: relative;
   z-index: 99;
-  top: 80px;
+  top: 1000px;
   height: 250px;
   background-color: red;
   width: 100%;
