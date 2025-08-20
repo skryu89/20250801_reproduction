@@ -27,4 +27,5 @@ $(document).ready(function () {
     $(".nav-menu").fadeToggle();  
     $("body").toggleClass("menu-open");
   });
+
 });
