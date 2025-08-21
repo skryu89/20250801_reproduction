@@ -417,7 +417,6 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #b9b6b6;
 }
 
-/* 画像サイズ固定 */
 .plant, .person {
   position: absolute;
   width: 60px;       
@@ -750,6 +749,7 @@ img.message {
     padding-right: 0px;
 
   }
+
   .hamburger {
      z-index: 1001;
      box-sizing: border-box;
@@ -759,8 +759,8 @@ img.message {
      display: inline-block;
      width: 60px;
      height: 60px;
-     background-color: #d40020;
-     border-color: #d40020;
+     background-color: red;
+     border-color: red;
     }
 
 
@@ -841,10 +841,128 @@ img.message {
       text-decoration: none;
       color: #000;
    }
+  }
+
 
 @media screen and (max-width: 390px) {
-  
 
+  body {
+    min-width: 391px;
+  }
 
+  .page-wrapper {
+    transform: scale(calc(100vw / 391));
+    transform-origin: top left;
+    border-width: 15px; 
+    height: calc(4000px * (100vw / 391));
+  }
+
+  .marquee-container, .header-logo, .hamburger {
+    transform: scale(calc(100vw / 391));
+    transform-origin: top left;
+  }
+
+  .hamburger {
+    transform-origin: top right;
+  }
+
+  .marquee-container {
+    height: 15px; 
+  }
+  .marquee {
+    font-size: 10px; 
+  }
+
+  .hamburger {
+     z-index: 1001;
+     box-sizing: border-box;
+     position: fixed;
+     top: 0;
+     right: 0;
+     display: inline-block; 
+     width: 50px;
+     height: 50px;
+     background-color: red;
+     border-color: red;
+     border-bottom-left-radius: 10px;
+  }
+
+  .hamburger span {
+     position: absolute;
+     background-color: #fff; 
+     display: block;
+     transition: all 0.3s ease;
+     height: 3px;
+     margin-top: 2px;
+     left: 7px;
+     width: 7px;
+     margin: 0;
+   }
+
+    .hamburger.open span {
+     left: 10px;
+     width: 30px;
+     background-color: #fff; 
+   }
+
+    .hamburger span:nth-child(1) {
+      top: 10px;
+      width: 30px;
+   }
+
+    .hamburger span:nth-child(2) {
+      top: 20px;
+      width: 30px;
+   }
+
+    .hamburger span:nth-child(3) {
+      top: 30px;
+      width: 30px;
+   }
+
+    .hamburger.open span:nth-child(1) {
+      top: 15px;
+      transform: rotate(45deg);
+   }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+   }
+
+    .hamburger.open span:nth-child(3) {
+      top: 15px;
+      transform: rotate(-45deg);
+   }
+   .nav-menu {
+     display: none;
+   }
+
+  .nav-menu {
+      box-sizing: border-box;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      opacity: 1.0;
+      text-align: center;
+      z-index: 9999;
+      overflow-y: auto;
+   }
+
+  .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+   }
+
+  .nav-menu li {
+      margin: 20px 0;
+   }
+
+  .nav-menu a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #000;
+   }
 }
-}
+
