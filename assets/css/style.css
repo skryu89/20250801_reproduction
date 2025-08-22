@@ -24,7 +24,7 @@ body {
 
 
 .marquee-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -53,7 +53,7 @@ body {
 .header-logo {
   position: fixed;
   top: 10px;
-  left: 5vw;
+  left: 5.1vw;
   z-index: 999; 
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .logo {
-  width: 10vw;
+  width: 15vw;
   max-width: 150px;
   height: auto;
 }
@@ -71,7 +71,7 @@ body {
 .font-en {
   display: inline-block;
   width: auto;
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding-left: 10px;
 }
 
@@ -89,23 +89,25 @@ body {
 .NEW-MID,
 .RECRUIT {
   position: absolute;
-  right: 7vw;
   color: #000;
 }
 
 .NEW-MID {
   top: 6vh;
+  right: 6.11vw;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
+  letter-spacing: 0.5px;
 }
 
 .RECRUIT {
   color: #000;
-  top: 6vh;
-  right: 8vw;
-  font-size: 2.5vw;
-  font-weight: 100;
-  font-style: italic;
+  top: 6.3vh;
+  right: 5.75vw;
+  transform: skewX(-10deg);
+  font-size: 2.19vw;
+  font-weight: 300;
+  letter-spacing: 2.1px;
 }
 
 .letter {
@@ -118,31 +120,31 @@ body {
 
 .letter img {
   position: absolute;
-  width: 18%;
+  width: 20%;
   height: auto;
 }
 
 
-.s1 { top: 1.56%; left: 3.66%; }
-.h1 { top: 12.5%; left: 18.29%; z-index: 5; }
-.o  { top: 6%; left: 35.12%; z-index: 5; width: 20%; } 
-.s2 { top: 33.75%; left: 36.57%; }
-.h2 { top: 47.5%; left: 51.22%; }
-.i  { top: 38.75%; left: 62.92%; width: 10%; } 
-.n  { top: 31.25%; left: 76.85%; }
+.s1 { top: -1.0%; left: 3.4%; }
+.h1 { top: 12.5%; left: 19%; z-index: 5; }
+.o  { top: 3%; left: 35%; z-index: 5; width: 80%; } 
+.s2 { top: 33.6%; left: 36.57%; width: 95%; }
+.h2 { top: 47.5%; left: 53.4%; width: 82.8%; }
+.i  { top: 38.75%; left: 65.3%; width: 83.2%; } 
+.n  { top: 31.25%; left: 80.2%; width: 82.93%; }
 
 .plant, .person {
   position: absolute;
-  width: 10.22%;
+  width: 12.44%;
   height: auto;
 }
-.plant { top: 8%; left: 12.29%; z-index: 1; width:6.6%; }
-.p1 { top: 18.75%; left: 4.39%; width:7.3%; }
-.p2 { top: 40%; left: 16.1%; width:7.3%; }
+.plant { top: 8%; left: 13.67%; z-index: 1; width:6.6%; }
+.p1 { top: 19.00%; left: 5.11%; width:10.33%; }
+.p2 { top: 39.22%; left: 17.0%; width:7.3%; }
 .p3 { top: 18.75%; left: 27.06%; width:14.6%; }
-.p4 { top: 21.25%; left: 43.9%; width:7.3%; }
-.p5 { top: 2.5%; left: 49.73%; width:18.3%; }
-.p6 { top: 26.25%; left: 69.49%; width:11%; }
+.p4 { top: 20.0%; left: 44.4%; z-index: 6; width:7.8%; }
+.p5 { top: 3.11%; left: 52.17%; width:18.3%; }
+.p6 { top: 26.25%; left: 72.49%; width:11.8%; }
 
 
 .home_news--wrap {
@@ -304,6 +306,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   border: 20px solid red;
   overflow: hidden;
   min-width: 0; 
+  width: 100%;
 }
 
 
@@ -336,8 +339,8 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 .header-logo {
   position: fixed;
-  top: 3px;
-  left: 70px;
+  top: -10px;
+  left: 67px;
   z-index: 200; 
 }
 
@@ -355,9 +358,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 .font-en {
   display: block;
   width: auto;
-  font-size: 13px;
+  font-size: 11.5px;
   font-weight: 900;
-  margin-left: -40px;
+  margin-top: -5px;
+  margin-left: -41px;
   letter-spacing: 1px;
 }
 
@@ -381,7 +385,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 .text-wrapper {
   position: absolute;
   left: 120px;
-  top: 100px;
+  top: 135px;
   width: 150px;
   color: #b9b6b6; 
   text-align: center;
@@ -391,29 +395,24 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 .NEW-MID {
   font-weight: bold;
   font-size: 20px; 
+  right: 120px;
   letter-spacing: 0.5px;
   white-space: nowrap;
   width: 100%;
   height: auto;
   color: #b9b6b6;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .RECRUIT {
   font-weight: 100;
-  font-size: 50px; 
-  letter-spacing: 0.5px;
+  font-size: 43px; 
+  right: 110px;
+  letter-spacing: 4.5px;
   white-space: nowrap;
   width: 100%;
   height: auto;
-  font-style: italic;
   color: #b9b6b6;
-}
-
-.plant, .person {
-  position: absolute;
-  width: 60px;       
-  height: auto;
 }
 
 .letter {
@@ -423,8 +422,8 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 .s1 {
   position: absolute;
-  left: 10px;
-  top: 15px;
+  left: -5px;
+  top: 38px;
   width: 130px;   
 }
 
@@ -436,8 +435,8 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 .h1 {
   position: absolute;
-  left: 120px;
-  top: 60px;
+  left: 105px;
+  top: 80px;
   width: 100px;   
 }
 
@@ -449,9 +448,9 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   
 .o {
   position: absolute;
-  left: 220px;
-  top: 30px;
-  width: 100px;   
+  left: 205px;
+  top: 50px;
+  width: 105px;   
 }
 
 .o img{ 
@@ -461,7 +460,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 .s2 { 
   position: absolute;
-  left: -10px;
+  left: -25px;
   top: 280px;
   width: 130px; 
 }
@@ -473,9 +472,9 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 .h2 { 
   position: absolute;
-  left: 90px;
-  top: 330px;
-  width: 100px; 
+  left: 80px;
+  top: 340px;
+  width: 105px; 
 }
 
 .h2 img {
@@ -485,8 +484,8 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 .i  { 
   position: absolute;
-  left: 150px;
-  top: 300px;
+  left: 160px;
+  top: 310px;
   width: 100px; 
 }
 
@@ -495,15 +494,31 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   height: auto;
 }
 
-.n  { left: 50px; }
+.n  { 
+  position: absolute;
+  left: 248px;
+  top: 270px; 
+  width: 100px;
+}
 
-.plant { left: 5px; }
-.p1    { left: 3px; }
-.p2    { left: 28px; }
-.p3    { left: 38px; }
-.p4    { left: 25px; }
-.p5    { left: 65px; }
-.p6    { left: 50px; }
+.n img {
+  width: 100%;
+  height: auto;
+}
+
+.plant, .person {
+  position: absolute;      
+  height: auto;
+}
+
+
+.plant { left: 65px; top: 70px; width: 40px; }
+.person.p1 { left: -5px; top: 115px; width: 70px; }
+.person.p2 { display: none; }
+.person.p3 { left: 125px; top: 110px; width: 95px; z-index: 5; }
+.person.p4 { left: 87px; top: 280px; width: 55px; }
+.person.p5 { left: 230px; top: 80px; width: 130px; z-index: 5; }
+.person.p6 { left: 195px; top: 240px; width: 80px; }
 
 .home_news--wrap {
   display: flex;
@@ -868,12 +883,6 @@ img.message {
   }
 
   
-.plant, .person {
-  position: absolute;
-  width: 60px;       
-  height: auto;
-}
-
 .letter {
   position: absolute;
 }
@@ -881,8 +890,8 @@ img.message {
 
 .s1 {
   position: absolute;
-  left: 10px;
-  top: 15px;
+  left: -5px;
+  top: 38px;
   width: 130px;   
 }
 
@@ -894,8 +903,8 @@ img.message {
 
 .h1 {
   position: absolute;
-  left: 120px;
-  top: 60px;
+  left: 105px;
+  top: 80px;
   width: 100px;   
 }
 
@@ -907,9 +916,9 @@ img.message {
   
 .o {
   position: absolute;
-  left: 220px;
-  top: 30px;
-  width: 100px;   
+  left: 205px;
+  top: 50px;
+  width: 105px;   
 }
 
 .o img{ 
@@ -919,7 +928,7 @@ img.message {
 
 .s2 { 
   position: absolute;
-  left: -10px;
+  left: -25px;
   top: 280px;
   width: 130px; 
 }
@@ -931,9 +940,9 @@ img.message {
 
 .h2 { 
   position: absolute;
-  left: 90px;
-  top: 330px;
-  width: 100px; 
+  left: 80px;
+  top: 340px;
+  width: 105px; 
 }
 
 .h2 img {
@@ -943,8 +952,8 @@ img.message {
 
 .i  { 
   position: absolute;
-  left: 150px;
-  top: 300px;
+  left: 160px;
+  top: 310px;
   width: 100px; 
 }
 
@@ -953,14 +962,32 @@ img.message {
   height: auto;
 }
 
-.n  { left: 50px; }
+.n  { 
+  position: absolute;
+  left: 248px;
+  top: 270px; 
+  width: 100px;
+}
 
-.plant { left: 5px; }
-.p1    { left: 3px; }
-.p2    { left: 28px; }
-.p3    { left: 38px; }
-.p4    { left: 25px; }
-.p5    { left: 65px; }
-.p6    { left: 50px; }
+.n img {
+  width: 100%;
+  height: auto;
+}
+
+.plant, .person {
+  position: absolute;      
+  height: auto;
+}
+
+
+.plant { left: 65px; top: 70px; width: 40px; }
+.person.p1 { left: -5px; top: 115px; width: 70px; }
+.person.p2 { display: none; }
+.person.p3 { left: 125px; top: 110px; width: 95px; z-index: 5; }
+.person.p4 { left: 87px; top: 280px; width: 55px; }
+.person.p5 { left: 230px; top: 80px; width: 130px; z-index: 5; }
+.person.p6 { left: 195px; top: 240px; width: 80px; }
+
+
 
 }
