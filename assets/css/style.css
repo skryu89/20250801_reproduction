@@ -293,53 +293,46 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 /* ===============================
    767px → レイアウト切り替え
    =============================== */
-@media screen and (max-width: 767px) and (min-width: 391px) {
+@media screen and (max-width: 767px) {
   html, body {
   width: 100%;            
   overflow-x: hidden; 
   overflow-y: auto;      
 }
-　
-.marquee-container {
-  width: 100%;
+
+.page-wrapper {
+  border: 20px solid red;
   overflow: hidden;
-  background-color: red;    
-  color: #fff;                
-  font-size: 20px;
-  white-space: nowrap;
+  min-width: 0; 
+}
+
+
+.marquee-container {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 20px; 
   z-index: 100;
-}
-
-.marquee-container::before {
- content: "";
- position: absolute;
- top: 0;              
- left: 0;
- width: 100%;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .marquee {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
   animation: marquee 50s linear infinite;
-  background-color:  red;  
 }
 
 @keyframes marquee {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0%   { transform: translateX(100%) translateY(-50%); }
+  100% { transform: translateX(-100%) translateY(-50%); }
 }
 
-.page-wrapper {
-  position: relative; 
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  border: 20px solid red;
-  box-sizing: border-box;
-}
 
 .header-logo {
   position: fixed;
@@ -756,129 +749,6 @@ img.message {
      position: fixed;
      top: 0;
      right: 0;
-     display: inline-block;
-     width: 60px;
-     height: 60px;
-     background-color: red;
-     border-color: red;
-    }
-
-
-  .hamburger span {
-     position: absolute;
-     background-color: #fff; 
-     display: block;
-     transition: all 0.3s ease;
-     height: 5px;
-     margin-top: 5px;
-     left: 10px;
-     width: 3px;
-     margin: 0;
-   }
-
-    .hamburger.open span {
-     left: 10px;
-     width: 30px;
-     background-color: #fff; 
-   }
-
-    .hamburger span:nth-child(1) {
-      top: 20px;
-      width: 30px;
-   }
-
-    .hamburger span:nth-child(2) {
-      top: 30px;
-      width: 30px;
-   }
-
-    .hamburger span:nth-child(3) {
-      top: 40px;
-      width: 30px;
-   }
-
-    .hamburger.open span:nth-child(1) {
-      top: 40px;
-      transform: rotate(45deg);
-   }
-
-    .hamburger.open span:nth-child(2) {
-      opacity: 0;
-   }
-
-    .hamburger.open span:nth-child(3) {
-      top: 40px;
-      transform: rotate(-45deg);
-   }
-   .nav-menu {
-     display: none;
-   }
-
-   .nav-menu {
-      box-sizing: border-box;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      opacity: 1.0;
-      text-align: center;
-      z-index: 9999;
-      overflow-y: auto;
-   }
-
-  .nav-menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-   }
-
-  .nav-menu li {
-      margin: 20px 0;
-   }
-
-  .nav-menu a {
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: #000;
-   }
-  }
-
-
-@media screen and (max-width: 390px) {
-
-  body {
-    min-width: 391px;
-  }
-
-  .page-wrapper {
-    transform: scale(calc(100vw / 391));
-    transform-origin: top left;
-    border-width: 15px; 
-    height: calc(4000px * (100vw / 391));
-  }
-
-  .marquee-container, .header-logo, .hamburger {
-    transform: scale(calc(100vw / 391));
-    transform-origin: top left;
-  }
-
-  .hamburger {
-    transform-origin: top right;
-  }
-
-  .marquee-container {
-    height: 15px; 
-  }
-  .marquee {
-    font-size: 10px; 
-  }
-
-  .hamburger {
-     z-index: 1001;
-     box-sizing: border-box;
-     position: fixed;
-     top: 0;
-     right: 0;
      display: inline-block; 
      width: 50px;
      height: 50px;
@@ -933,11 +803,12 @@ img.message {
       top: 15px;
       transform: rotate(-45deg);
    }
+
    .nav-menu {
      display: none;
    }
 
-  .nav-menu {
+   .nav-menu {
       box-sizing: border-box;
       position: fixed;
       width: 100%;
@@ -964,5 +835,132 @@ img.message {
       text-decoration: none;
       color: #000;
    }
+  }
+
+
+@media screen and (max-width: 390px) {
+
+  body {
+    min-width: 391px;
+  }
+
+  .page-wrapper {
+    transform: scale(calc(100vw / 391));
+    transform-origin: top left;
+    border-width: 20px; 
+    height: calc(4000px * (100vw / 391));
+  }
+
+  .marquee-container, .header-logo, .hamburger {
+    transform: scale(calc(100vw / 391));
+    transform-origin: top left;
+  }
+
+  .hamburger {
+    transform-origin: top right;
+  }
+
+  .marquee-container {
+    height: 20px;
+  }
+  .marquee {
+    font-size: 15px; 
+  }
+
+  
+.plant, .person {
+  position: absolute;
+  width: 60px;       
+  height: auto;
 }
 
+.letter {
+  position: absolute;
+}
+
+
+.s1 {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 130px;   
+}
+
+.s1 img{ 
+  width: 100%;
+  height: auto;
+}
+
+
+.h1 {
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  width: 100px;   
+}
+
+
+.h1 img{
+  width: 100%;
+  height: auto;
+}
+  
+.o {
+  position: absolute;
+  left: 220px;
+  top: 30px;
+  width: 100px;   
+}
+
+.o img{ 
+  width: 100%;
+  height: auto;
+}
+
+.s2 { 
+  position: absolute;
+  left: -10px;
+  top: 280px;
+  width: 130px; 
+}
+
+.s2 img{ 
+  width: 100%;
+  height: auto;
+}
+
+.h2 { 
+  position: absolute;
+  left: 90px;
+  top: 330px;
+  width: 100px; 
+}
+
+.h2 img {
+  width: 100%;
+  height: auto;
+}
+
+.i  { 
+  position: absolute;
+  left: 150px;
+  top: 300px;
+  width: 100px; 
+}
+
+.i img {
+  width: 100%;
+  height: auto;
+}
+
+.n  { left: 50px; }
+
+.plant { left: 5px; }
+.p1    { left: 3px; }
+.p2    { left: 28px; }
+.p3    { left: 38px; }
+.p4    { left: 25px; }
+.p5    { left: 65px; }
+.p6    { left: 50px; }
+
+}
