@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // Slick slider
   $('.company-seniors').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -39,10 +38,10 @@ function updateSlide() {
     visual.style.transform = 'translateX(0px)';
   } else if (windowWidth <= maxWidth) {
     const ratio = (windowWidth - minWidth) / (maxWidth - minWidth);
-    const maxSlide = 200; // 最大スライド幅(px)
+    const maxSlide = 200; 
     visual.style.transform = `translateX(${ratio * maxSlide}px)`;
   } else {
-    visual.style.transform = 'translateX(0px)'; // 768px以上は中央固定
+    visual.style.transform = 'translateX(0px)'; 
   }
 }
 
