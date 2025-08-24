@@ -665,7 +665,6 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   }
 
 @media screen and (max-width: 390px) {
- 
 
   .home_news--wrap {
     display: flex;
@@ -981,6 +980,104 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   position: relative;
 }
 
+.recruit1 {
+ background-color: #D92B44;
+ color:#fff;
+ width: 90%;
+ padding : 5% 0;
+ margin : 0 auto;
+ font-weight: 800;
+ text-align: center;
+}
+
+.recruit_img {
+  display: flex;
+}
+
+.mynavi {
+  border: 1px solid #D92B44;
+  margin-left: 5%;
+  width: 45%;
+  border-right: none;
+}
+
+.mynavi img {
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 28%;
+  margin-bottom: 28%;
+  border: none;
+}
+
+.recnavi {
+  border: 1px solid #D92B44;
+  width: 45%;
+}
+
+.recnavi img {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30%;
+  margin-bottom: 28%;
+  border: none;
+}
+
+
+.recruit2 {
+  background-color: #0039A4;
+  color:#fff;
+  width: 90%;
+  padding : 5% 0;
+  margin : 0 auto;
+  margin-top : 5%;
+  font-weight: 800;
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contact_address {
+  border: 1px solid #0039A4;
+  margin-left: 5%;
+  width: 45%;
+  border-right: none;
+}
+
+
+.contact_number {
+  border: 1px solid #0039A4;
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.office_number {
+  display: inline-block;
+  white-space: normal;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 28%;
+  margin-bottom: 28%;
+  border: none;
+}
+
+.office_hours {
+  display: block;
+}
+
+.home {
+  text-align: center;
+}
+
+.tav {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  padding-left: 10px;
+}
 
 }
+
 
