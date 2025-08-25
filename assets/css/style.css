@@ -631,9 +631,6 @@ img.message { right: 5%; top: 1000px; width: 50%; }
       transform: rotate(-45deg);
    }
 
-   .nav-menu {
-     display: none;
-   }
 
    .nav-menu {
       box-sizing: border-box;
