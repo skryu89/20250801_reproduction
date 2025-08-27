@@ -1230,7 +1230,7 @@ body {
 .company-information {
   width: 100%;
   border: 3px solid #000; 
-  margin-top: -30px;
+  margin-top: -15px;
   padding: 20px; 
   padding-bottom: 100px;                  
   background-color: #f9f9f9; 
@@ -1241,23 +1241,27 @@ body {
 .location {
   font-size: 0.9rem;
   font-weight: 700;
+  letter-spacing: 0.01rem;
 }
 
 .home {
   text-align: center;
   font-size: 12px;
   font-weight: 600;
+  margin-top: 30px;
+  text-decoration: underline;
 }
 
 .tav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  font-size: 11px;
+  gap: 10px;
+  font-size: 12px;
   font-weight: 600;
   margin-top: 10px;
   margin-left: 20px;
+  text-decoration: underline;
 }
 
 .summary {
@@ -1285,8 +1289,7 @@ body {
   bottom: 0;               
   left: 0;                  
   z-index: 15;            
-}
 
 }
-
+}
 
