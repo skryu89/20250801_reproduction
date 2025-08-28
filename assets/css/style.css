@@ -693,6 +693,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   z-index: 1; 
   }
 
+
   .home_news--wrap {
     display: flex;
     align-items: center; 
@@ -768,7 +769,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   .visual-area {
     position: relative;
-    left: 0%;
+    left: -2%;
     top: -5%;
     width: 100%;      
     max-width: 100%;   
@@ -779,7 +780,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   .text-wrapper {
     position: absolute;
-    left: 12%; 
+    left: 13%; 
     top: 33.18%; 
     width: 40.5%; 
     color: #b9b6b6; 
@@ -1264,12 +1265,12 @@ body {
   text-decoration: underline;
 }
 
-.summary {
+.company-summary {
   margin: 0 10px;
   margin-bottom: 5px;
 }
 
-.summary img {
+.company-summary img {
   width: 20%;
 }
 
