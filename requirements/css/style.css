@@ -1,4 +1,11 @@
 @media screen and (max-width: 767px) {
+  
+  html, body {
+    width: 100%;            
+    overflow-x: hidden; 
+    overflow-y: auto;      
+  }
+  
  .header-logo {
     position: fixed;
     top: -10px;
@@ -225,27 +232,68 @@
       color: #000;
    }
    
+
+.job-hunting {
+  background-color: #fff;
+}
+
+.new-graduate {
+  background-color: #fff;
+  padding: 30px 30px;
+}
+
+.three-standing-seniors {
+  width: 90%;
+}
+
+.recruit {
+  background-color: #d40020;
+  border-radius: 20px;
+  color: #fff;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.apointment a:link,.apointment a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+
+.three-sitting-seniors {
+  width: 90%;
+}
+
+
 .Requirements {
     background-color: #D92B44;
     color: #fff;
     height: auto;
+    text-decoration: none;
 }
 
 h2 {
-    padding-top: 20%;
+    padding-top: 10%;
     font-size: 40px;
     letter-spacing: 2px;
     margin-left: 30px;
     height: 20px;
 }
 
+
 .box1  {
     display: flex;
     gap: 10%;
     margin-left: 40%;
+    padding: 10px 0;
+    text-decoration: none;
 }
 
 
+.home1 a,.requirement a {
+   color: #fff; 
+}
 
 .requirements-wrapper {
   background: #fff; 
