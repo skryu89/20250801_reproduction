@@ -1315,25 +1315,10 @@ body {
   width: 20%;
 }
 
-.home a:visited {
+.home a,.interview a,.job-description a,.news a,.company-summary a{
   color: black;
 }
 
-.interview a:visited {
-  color: black;
-}
-
-.job-description a:visited {
-  color: black;
-}
-
-.news a:visited {
-  color: black;
-}
-
-.company-summary a:visited {
-  color: black;
-}
 
 .ENTRY {
   font-size: 40px;
