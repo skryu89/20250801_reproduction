@@ -768,11 +768,12 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     width: 100%;
     margin-top: 30px;
     margin-left: 30px;
+
   }
 
   .visual-area {
     position: relative;
-    left: -2.5%;
+    left: -1%;
     top: -5%;
     width: 100%;      
     max-width: 100%;   
@@ -852,7 +853,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .text {
     position: relative; 
     top: -15%;
-    left: -17.44%;
+    left: -19.5%;
     margin-left: -0.7%; 
     padding: 0 29%; 
     white-space: nowrap;
@@ -869,7 +870,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .text2 { font-size: 7.27vw; }
   .text3 { 
     font-size: 12.19vw;
-    letter-spacing: 0.59vw;
+    letter-spacing: -0.5vw;
   }
 
   .text4 { 
@@ -886,13 +887,15 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   .writings {
     margin-top: 150px;
+    margin-left: -5px;
+    margin-right: 40px;
   }
 
   .writing {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: -8px;
-    margin-left: 35px;
-    letter-spacing: 1.5px;
+    margin-left: 45px;
+    letter-spacing: 2.0px;
     white-space: normal;
   }
   
@@ -908,30 +911,71 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     position: absolute; 
     max-width: 90%; 
     height: auto; 
+    z-index: 1;
   }
 
-  img.men { left: 90px; top: 600px; width: 100%; }
+  img.men { left: 90px; top: 640px; width: 100%; }
   img.pencil { display: none; }
   img.the-future { display: none; }
   img.message { display: none; }
+ 
 
+ .passages {
+  background-color: #d40020;
+  margin-top: 240px;
+  position: relative;
+  z-index: 2;
+ }
+
+ .passage_1-2 {
+  display: flex;
+ }
+
+ .passage1 {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: 60px;
+   margin-left: 15px;
+   white-space: nowrap;
+ }
+
+ .passage2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-left: -20px;
+  white-space: nowrap;
+  letter-spacing: 0.6rem;
+ }
+
+ .passage3 {
+  color: #fff;
+  font-size: 13px;
+  margin-top: -20px;
+  padding: 20px 0px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid #fff;
+ }
   
-.company-seniors img {
+ .company-seniors img {
   height: auto;
   display: block;
   width: 200px;
   margin-top: 0;
   gap : 10px;
-}
+ }
 
-.company-seniors .slick-slide {
+ .company-seniors .slick-slide {
   background-color: #d40020;
   margin: 0 0;
-}
+ }
 
-.company-seniors .slick-list {
+ .company-seniors .slick-list {
   margin: 0 0px;
-}
+ }
 
 
 .requirements-wrapper {
@@ -1271,8 +1315,23 @@ body {
   width: 20%;
 }
 
-.home a:visited, .interview a:visited, 
-.job-description a:visited, .news a:visited, .company-summary a:visited {
+.home a:visited {
+  color: black;
+}
+
+.interview a:visited {
+  color: black;
+}
+
+.job-description a:visited {
+  color: black;
+}
+
+.news a:visited {
+  color: black;
+}
+
+.company-summary a:visited {
   color: black;
 }
 
@@ -1288,7 +1347,6 @@ body {
   bottom: 0;               
   left: 0;                  
   z-index: 15;            
-
 }
 }
 
