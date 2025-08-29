@@ -237,6 +237,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   margin-top: 300px;
   gap : 10px;
 }
+
 .company-seniors .slick-slide {
   background-color: #d40020;
   margin: 0 10px;
@@ -244,6 +245,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 .company-seniors .slick-list {
   margin: 0 0px;
 }
+
 .requirements {
   background: #fff;
   padding: 60px 20px;
@@ -254,6 +256,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #1565c0;
   margin-bottom: 40px;
 }
+
 .buttons {
   display :flex;
 }
@@ -769,7 +772,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   .visual-area {
     position: relative;
-    left: -2%;
+    left: -2.5%;
     top: -5%;
     width: 100%;      
     max-width: 100%;   
@@ -931,28 +934,26 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 }
 
 
-
-
 .requirements-wrapper {
   background: #fff; 
   padding: 80px 0; 
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   margin-top: 40px; 
   position: relative; 
+  z-index: 1;
 }
 
 .requirements {
   width: 90%;
-  height: 162vh;
   max-width: 390px; 
   margin: 0 auto;
   padding: 5px 10px;
   padding-bottom: 0px;
   text-align: center;
   position: relative; 
+  bottom: -20px;
   z-index: 2; 
   box-shadow: 0 0 0 20px #d40020; 
-  border-bottom: 43px solid #d40020;
 }
 
 body {
@@ -1064,12 +1065,8 @@ body {
 }
 
 @keyframes moveRight {
-  0% {
-    right: -100%; 
-  }
-  100% {
-    right: 100%;  
-  }
+  0% { right: -100%; }
+  100% { right: 100%; }
 }
 
 .sentence {
@@ -1147,6 +1144,7 @@ body {
   border-top: none;
   max-width: 390px;
   height: 120px;
+  margin-bottom: 100px;
 }
 
 .contact-address {
@@ -1208,19 +1206,21 @@ body {
   padding: 0;              
 }
 
-.seven-seniors {
-  width: 370px;
+.seven-people {
+  width: 390px;
   position: relative;
-  top: 10px;
-  left: -5%;
-  z-index: 20;
+  top: -35px;
+  left: -10px;
+  border-bottom: 90px solid #d40020;
+  z-index: 1;
 }
 
-.beside {
-  width: 100%;
-  height: 55px;
-  margin-top: -58px;
-  background-color: #D92B44;
+.seven-seniors {
+  width: 350px;
+  position: absolute;
+  top: -40px;
+  left: 0%;
+  z-index: 5;
 }
 
 .logo-logo {
@@ -1231,7 +1231,7 @@ body {
 .company-information {
   width: 100%;
   border: 3px solid #000; 
-  margin-top: -15px;
+  margin-top: -50px;
   padding: 20px; 
   padding-bottom: 100px;                  
   background-color: #f9f9f9; 
@@ -1257,24 +1257,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   font-size: 12px;
   font-weight: 600;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
+  white-space: nowrap;
+  letter-spacing: 1px;
   text-decoration: underline;
-}
-
-.company-summary {
-  margin: 0 10px;
-  margin-bottom: 5px;
 }
 
 .company-summary img {
   width: 20%;
 }
 
-.home a:visited,.tav a:visited {
+.home a:visited, .interview a:visited, 
+.job-description a:visited, .news a:visited, .company-summary a:visited {
   color: black;
 }
 
