@@ -5,6 +5,17 @@
     overflow-x: hidden; 
     overflow-y: auto;      
   }
+
+  
+  .page-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  border: 20px solid red;
+  height: 600%;
+  border-bottom: none;
+  z-index: 1; 
+  }
   
  .header-logo {
     position: fixed;
@@ -138,70 +149,64 @@
       text-decoration: none;
       color: #000;
    }
-   
 
-.job-hunting {
-  background-color: #fff;
-}
+  .seniors {
+    background-color: #fff;
+    padding: 30px 0;
+    margin: 0 auto;
+  }
 
-.new-graduate {
-  background-color: #fff;
-  padding: 30px 30px;
-}
+  .man1,.man2,.man3,.woman1,.woman2,.woman3 {
+    width: 100%;
+  }
 
-.three-standing-seniors {
-  width: 90%;
-}
+  .senior1,.senior2,.senior3,.senior4,.senior5,.senior6 {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 75%;
+    position: relative;
+  }
 
-.recruit {
-  background-color: #d40020;
-  border-radius: 20px;
-  color: #fff;
-  width: 30%;
-  text-align: center;
-  text-decoration: none;
-}
+  .recruit {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: -35px;
+    background-color: #d40020;
+    position: absolute;
+  }
 
-.apointment a:link,.apointment a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-
-.three-sitting-seniors {
-  width: 90%;
-}
-
-
-.Requirements {
-    background-color: #D92B44;
+  a.white  {
     color: #fff;
-    height: auto;
     text-decoration: none;
-}
+  }
 
-h2 {
-    padding-top: 10%;
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-left: 30px;
-    height: 20px;
-}
+  a.black {
+    color: #000;
+    text-decoration: none;
+  }
 
-
-.box1  {
+  .profile {
     display: flex;
-    gap: 10%;
-    margin-left: 40%;
     padding: 10px 0;
-    text-decoration: none;
-}
+  }
 
+  .post {
+    font-weight: 600;
+    font-size: 12px;
+  }
 
-.home1 a,.requirement a {
-   color: #fff; 
-}
+  .name {
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
+  .more {
+    margin-left: 100px;
+  }
+  
 .requirements-wrapper {
   background: #fff; 
   padding: 80px 0; 
