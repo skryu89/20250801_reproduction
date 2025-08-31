@@ -149,8 +149,19 @@ body {
 
 @media screen and (max-width: 390px) {
    
+  html, body {
+    width: 100%; 
+    max-width: 390px;         
+    overflow-x: hidden; 
+    overflow-y: auto;      
+  }
+
   body {
-    width: 390px;
+    position: fixed;
+    border: 20px solid red;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
   }
 
   .hamburger {
@@ -160,22 +171,23 @@ body {
      top: 0;
      right: 0;
      display: inline-block; 
-     width: 50px;
-     height: 50px;
+     width: 60px;
+     height: 60px;
      background-color: red;
      border-color: red;
      border-bottom-left-radius: 10px;
   }
+
   .hamburger span {
      position: absolute;
      background-color: #fff; 
      display: block;
      transition: all 0.3s ease;
      height: 3px;
-     margin-top: 2px;
-     left: 7px;
-     width: 7px;
-     margin: 0;
+     margin-top: 5px;
+     left: 12px;
+     width: 12px;
+     margin: 8px 0;
    }
 
     .hamburger.open span {
@@ -242,69 +254,6 @@ body {
       text-decoration: none;
       color: #000;
    }
-   
-
-.job-hunting {
-  background-color: #fff;
-}
-
-.new-graduate {
-  background-color: #fff;
-  padding: 30px 30px;
-  width: 80%;
-}
-
-.three-standing-seniors {
-  width: 100%;
-}
-
-.recruit {
-  background-color: #d40020;
-  border-radius: 20px;
-  color: #fff;
-  width: 30%;
-  margin: 20px 0;
-  margin-left: 20px;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.recruit a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.apointment {
-  margin: 20px 0;
-}
-
-.apointment a {
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-.more {
-  background-color: #d40020;
-  color: #fff;
-  height: 35px;
-  line-height: 35px;
-  text-align: right;
-}
-
-
-.job-change {
-  background-color: #fff;
-  padding: 30px 30px;
-  width: 80%;
-}
-
-
-.three-sitting-seniors {
-  width: 100%;
-}
 
 
 .Requirements {
@@ -317,6 +266,7 @@ body {
 
 h2 {
     padding-top: 15%;
+    font-family: sans-serif;
     font-size: 40px;
     margin-left: 70px;
     letter-spacing: 2px;
@@ -332,30 +282,102 @@ h2 {
     text-decoration: none;
 }
 
+.requirement-tav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
 
-.home1 a,.requirement a {
+.home1 a {
    color: #fff; 
 }
 
-.requirements-wrapper {
-  background: #fff; 
-  padding: 80px 0; 
-  padding-bottom: 0px;
-  margin-top: 0px; 
-  position: relative; 
-  z-index: 5;
+
+.job-hunting {
+  background-color: #fff;
+}
+
+.new-graduate {
+  background-color: #fff;
+  padding: 30px 30px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.three-standing-seniors {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.recruit {
+  background-color: #d40020;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  padding: 3px 0;
+  width: 25%;
+  margin: 20px 0;
+  margin-left: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+a .recruit {
+  color: #fff;
+  text-decoration: none;
+}
+
+a .apointment  {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.more {
+  background-color: #d40020;
+  color: #fff;
+  height: 35px;
+  line-height: 35px;
+  text-align: right;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.job-change {
+  background-color: #fff;
+  padding: 0px 30px;
+  padding-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.three-sitting-seniors {
+  width: 100%;
 }
 
 .requirements {
   width: 90%;
   max-width: 390px; 
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 5px 10px;
   padding-bottom: 0px;
   text-align: center;
   position: relative; 
   bottom: 50px;
-  z-index: 2; 
+  z-index: 1; 
   box-shadow: 0 0 0 20px #d40020; 
 }
 
@@ -366,8 +388,9 @@ h2 {
   font-size: 1.2rem;
   letter-spacing: 1.5px;
   color: black;
+  margin: 0 auto;
   margin-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 
@@ -388,7 +411,7 @@ h2 {
   border: 1px solid #d40020;
   background: #fff5f7;
   text-align: center;
-  width: 90%;       
+  width: 70%;       
   height: auto;        
   padding: 1.1rem 2.1rem;  
   margin: 1rem auto;
@@ -417,7 +440,7 @@ h2 {
   border: 1px solid #2971b9;
   background: #E3F2FF;
   text-align: center;
-  width: 90%;       
+  width: 70%;       
   height: auto;        
   padding: 1.1rem 2.1rem;  
   margin: 1rem auto;
@@ -484,7 +507,8 @@ h2 {
 }
 
 .recruit-container {
-  width: 95%; 
+  width: 90%; 
+  height: 100%;
   margin: 0 auto; 
   max-width: 390px;
 }
@@ -561,7 +585,7 @@ h2 {
 }
 
 
-.contact-address a:visited {
+.contact-address a {
   color: #000;
 }
 
@@ -580,7 +604,7 @@ h2 {
 }
 
 
-.contact-number a:visited {
+.contact-number a {
   color: #000;
 }
 
@@ -609,15 +633,15 @@ h2 {
   width: 390px;
   position: relative;
   top: -35px;
-  left: -10px;
-  border-bottom: 90px solid #d40020;
+  border-top: 10px solid #d40020;
+  border-bottom: 60px solid #d40020;
   z-index: 1;
 }
 
 .seven-seniors {
   width: 350px;
   position: absolute;
-  top: -40px;
+  top: -50px;
   left: 0%;
   z-index: 5;
 }
@@ -628,9 +652,10 @@ h2 {
 }
 
 .company-information {
-  width: 100%;
+  width: 88%;
+  height: 80%;
   border: 3px solid #000; 
-  margin-top: -50px;
+  margin-top: -160px;
   padding: 20px; 
   padding-bottom: 100px;                  
   background-color: #f9f9f9; 
@@ -670,29 +695,10 @@ h2 {
   width: 20%;
 }
 
-.home a:visited {
+.home a,.interview a,.job-description a,.job-description a,.news a,.company-summary a{
   color: black;
 }
 
-.interview a:visited {
-  color: black;
-}
-
-.job-description a:link {
-  color: black
-}
-
-.job-description a:visited {
-  color: black;
-}
-
-.news a:visited {
-  color: black;
-}
-
-.company-summary a:visited {
-  color: black;
-}
 
 .ENTRY {
   font-size: 40px;
@@ -702,7 +708,7 @@ h2 {
   height: 50px;
   line-height: 50px;       
   text-align: center;
-  position: fixed;       
+  position: fixed;   
   bottom: 0;               
   left: 0;                  
   z-index: 15;            
