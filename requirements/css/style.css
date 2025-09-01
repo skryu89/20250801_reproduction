@@ -26,6 +26,7 @@ body {
     left: 10px;
     z-index: 200; 
     width: 40%;
+    height: auto;
     background-color: #fff;
   }
 
@@ -36,7 +37,6 @@ body {
 
   .logo {
     width: 180px; 
-    margin-left: -px;
     height: auto;
   }
   
@@ -45,6 +45,7 @@ body {
     position: absolute;
     inset: 0; 
     border: 20px solid #D92B44;
+    border-bottom: none;
     height: 320%; 
   }
 
@@ -440,7 +441,6 @@ a .apointment  {
   margin: 10px auto;
   padding: 5px 10px;
   text-align: center;
-  box-shadow: 0 0 0  #D92B44; 
 }
 
 .section-title {
@@ -724,7 +724,7 @@ a .apointment  {
 
 .company-information {
   width: 100%;
-  height: 50%;
+  height: 60%;
   border: 3px solid #000; 
   padding: 20px; 
   background-color: #f9f9f9; 
