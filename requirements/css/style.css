@@ -46,7 +46,7 @@ body {
     inset: 0; 
     border: 20px solid #D92B44;
     border-bottom: none;
-    height: 350%; 
+    height: 310%; 
   }
 
   .font-en {
@@ -727,11 +727,9 @@ a .apointment  {
   height: 50%;
   border: 3px solid #000; 
   padding: 20px;
+  margin-top: 122%;
   background-color: #f9f9f9; 
   box-sizing: border-box; 
-  position: absolute;
-  top: 311%;
-  z-index: 11;
 }
 
 .logo-logo {
