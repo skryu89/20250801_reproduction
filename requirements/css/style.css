@@ -46,7 +46,7 @@ body {
     inset: 0; 
     border: 20px solid #D92B44;
     border-bottom: none;
-    height: 320%; 
+    height: 350%; 
   }
 
   .font-en {
@@ -175,7 +175,7 @@ body {
     position: fixed;
     top: -25px;
     left: 20px;
-    z-index: 100; 
+    z-index: 10; 
     width: 49%;
     height: 65px;
     background-color: #fff;
@@ -312,7 +312,7 @@ h2 {
     font-family: sans-serif;
     font-size: 2.9rem;
     margin-top: 18%;
-    margin-left: 11%;
+    margin-left: 8%;
 }
 
 .requirement-tav {
@@ -724,13 +724,13 @@ a .apointment  {
 
 .company-information {
   width: 100%;
-  height: 60%;
+  height: 50%;
   border: 3px solid #000; 
-  padding: 20px; 
+  padding: 20px;
   background-color: #f9f9f9; 
   box-sizing: border-box; 
   position: absolute;
-  top: 2150px;
+  top: 311%;
   z-index: 11;
 }
 
