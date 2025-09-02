@@ -70,98 +70,6 @@ body {
     margin-left: -30px;
     letter-spacing: 1px;
   }
-
-
-  .hamburger {
-     z-index: 1001;
-     box-sizing: border-box;
-     position: fixed;
-     top: 0;
-     right: 0;
-     display: inline-block; 
-     width: 50px;
-     height: 50px;
-     background-color: red;
-     border-color: red;
-     border-bottom-left-radius: 10px;
-  }
-
-  .hamburger span {
-     position: absolute;
-     background-color: #fff; 
-     display: block;
-     transition: all 0.3s ease;
-     height: 3px;
-     margin-top: 2px;
-     left: 7px;
-     width: 7px;
-     margin: 0;
-   }
-
-    .hamburger.open span {
-     left: 10px;
-     width: 30px;
-     background-color: #fff; 
-   }
-
-    .hamburger span:nth-child(1) {
-      top: 10px;
-      width: 30px;
-   }
-
-    .hamburger span:nth-child(2) {
-      top: 20px;
-      width: 30px;
-   }
-
-    .hamburger span:nth-child(3) {
-      top: 30px;
-      width: 30px;
-   }
-
-    .hamburger.open span:nth-child(1) {
-      top: 15px;
-      transform: rotate(45deg);
-   }
-
-    .hamburger.open span:nth-child(2) {
-      opacity: 0;
-   }
-
-    .hamburger.open span:nth-child(3) {
-      top: 15px;
-      transform: rotate(-45deg);
-   }
-
-
-   .nav-menu {
-      display: none;
-      box-sizing: border-box;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      opacity: 1.0;
-      text-align: center;
-      z-index: 9999;
-      overflow-y: auto;
-   }
-
-  .nav-menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-   }
-
-  .nav-menu li {
-      margin: 20px 0;
-   }
-
-  .nav-menu a {
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: #000;
-   }
 }
 
 @media screen and (max-width: 390px) {
@@ -319,7 +227,7 @@ h2 {
     margin-left: 8%;
 }
 
-.requirement-tav {
+.menu-tav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -419,11 +327,6 @@ a .apointment  {
   padding-right: 10px;
 }
 
-.side {
-  width: 100%;
-  border-bottom: 20px solid #d40020;
-}
-
 
 .job-change {
   background-color: #fff;
@@ -436,6 +339,12 @@ a .apointment  {
 
 .three-sitting-seniors {
   width: 100%;
+}
+
+
+.side {
+  width: 100%;
+  border-bottom: 20px solid #d40020;
 }
 
 .requirements {
