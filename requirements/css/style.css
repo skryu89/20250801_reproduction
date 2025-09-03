@@ -31,9 +31,18 @@ body {
   background-color: #D92B44; 
   z-index: 10; 
   }
+  
+  .marquee-container {
+    display: none;
+  }
+
+  .marquee {
+    display: none;
+  }
 
   .main-content {
     border: 20px solid #D92B44;
+    margin-top: -10px;
     width: 100%;
     height: auto;      
     box-sizing: border-box;

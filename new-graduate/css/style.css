@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +19,8 @@ body {
     overflow-x: hidden; 
     overflow-y: auto;      
   }
-  
+
+
   body::before {
   content: '';
   position: fixed; 
@@ -30,7 +32,6 @@ body {
   z-index: 10; 
   }
 
-
   .marquee-container {
     display: none;
   }
@@ -38,14 +39,14 @@ body {
   .marquee {
     display: none;
   }
-  
+
   .main-content {
     border: 20px solid #D92B44;
-    margin-top: -10px;
     width: 100%;
     height: auto;      
     box-sizing: border-box;
   }
+
   
  .header-logo {
     position: fixed;
@@ -53,6 +54,7 @@ body {
     left: 10px;
     z-index: 200; 
     width: 40%;
+    height: auto;
     background-color: #fff;
   }
 
@@ -63,9 +65,9 @@ body {
 
   .logo {
     width: 180px; 
-    margin-left: -px;
     height: auto;
   }
+
 
   .font-en {
     display: block;
@@ -79,7 +81,7 @@ body {
 }
 
 @media screen and (max-width: 390px) {
-  
+   
   html, body {
     width: 100%; 
     height: 100%;
@@ -213,9 +215,9 @@ body {
       text-decoration: none;
       color: #000;
    }
-  
 
-   .Interviews {
+
+  .Requirements {
     background-color: #D92B44;
     color: #fff;
     height: auto;
@@ -245,104 +247,7 @@ body {
     letter-spacing: 1px;
   }
 
-
-  .box1  {
-    display: flex;
-    gap: 10%;
-    margin-top: -80px;
-    margin-left: 50%;
-    text-decoration: none;
-  }
-
-  .mark1 {
-  font-size: 7px;
-  margin-top: 3px;
-  }
-
-  a  {
-  text-decoration: none;
-  }
-
-  .home1 a {
-   color: #fff; 
-   text-decoration: underline;
-   height: auto;
-  }
-
-
-  .seniors {
-    background-color: #fff;
-    margin-top: -20px;
-  }
-
-  .man1,.man2,.man3,.woman1,.woman2,.woman3 {
-    width: 100%;
-  }
-
-  .senior1,.senior2,.senior3,.senior4,.senior5,.senior6 {
-    margin: 0 auto;
-    padding: 30px 0;
-    width: 75%;
-    position: relative;
-  }
-
-  a.white  {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  a.black {
-    color: #000;
-    text-decoration: none;
-  }
-
-  .profile {
-    display: flex;
-    padding: 10px 0;
-  }
-
-  .post {
-    font-weight: 600;
-    font-size: 12px;
-  }
-
-  .name {
-    font-weight: 500;
-    font-size: 40px;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-.recruit {
-    display: flex;
-    width: 100%;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: #d40020;
-    position: absolute;
-}
-
-.season {
-  margin-left: 10px;
-}
-
   
-.more {
-  background-color: #d40020;
-  font-size: 14px;
-  color: #fff;
-  height: 25px;
-  line-height: 25px;
-  padding-left: 20px;
-}
-
-.mark2 {
-  font-size: 8px;
-  padding-right: 10px;
-}
-
-
 .side {
   width: 100%;
   border-bottom: 20px solid #d40020;

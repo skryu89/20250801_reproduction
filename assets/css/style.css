@@ -403,7 +403,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .NEW-MID {
     font-weight: bold;
     font-size: 20px; 
-    right: 120px;
+    right: 115px;
     letter-spacing: 0.5px;
     white-space: nowrap;
     width: 100%;
@@ -415,7 +415,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .RECRUIT {
     font-weight: 100;
     font-size: 43px; 
-    right: 110px;
+    right: 115px;
     letter-spacing: 2px;
     white-space: nowrap;
     width: 100%;
