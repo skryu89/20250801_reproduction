@@ -382,6 +382,8 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   .visual-area {
     position: relative;
+    left: 5%;
+    right: 5%;
     width: 100%;      
     max-width: 767px;   
     height: 800px;
@@ -460,6 +462,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     display: flex;
     align-items: center; 
     position: relative; 
+    left: 1.8%;
     width: 100%;
     max-width: 767px; 
     margin: 30px auto;
