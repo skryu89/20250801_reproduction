@@ -259,6 +259,7 @@ body {
 
   li a {
     color: #fff;
+    background-color: none;
   }
 
   .req, .new,.apo {
@@ -299,7 +300,9 @@ body {
   .slide2 {
     position: absolute;
     width: 115%;
-    height: 110%;
+    height: 100%;
+    top: 5%;
+    left: -10%;
     transform: scale(1.1);
     opacity: 0;
     animation: fade 6s infinite;
@@ -309,7 +312,8 @@ body {
   .slide3 {
     position: absolute;
     width: 115%;
-    height: 110%;
+    height: 100%;
+    left: -10%;
     transform: scale(1.1);
     opacity: 0;
     animation: fade 6s infinite;
@@ -324,7 +328,84 @@ body {
     75% { opacity: 0; }
     100% { opacity: 0; }
   }
+ 
+  .ja-en {
+    display: flex;
+    gap: 10px;
+  }
 
+  .recruit-ja {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-left: 20px;
+  }
+
+  .recruit-en {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  .requirement-container {
+    border: 1px solid #D92B44;
+    border-radius: 20px;
+    margin: 10px 20px;
+    width: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .requirement {
+    color: #D92B44;
+    background-color: #FFEDEF;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    text-align: center;
+    width: 90%;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    z-index: 5;
+    top: -0.7%;
+    left: 5%;
+    border-radius: 20px;
+  }
+
+  .requirement-wrapper {
+    border: 1px solid #D92B44;
+    margin: 30px 30px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .information {
+    text-align: center;
+    background-color: #FFEDEF;
+    border: 1px solid #D92B44;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .content {
+    font-size: 14px;
+    margin: 10px 10px;
+  }
+
+  .double-line {
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+  }
   
 .side {
   width: 100%;
