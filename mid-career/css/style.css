@@ -244,6 +244,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 13px;
     list-style: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -258,21 +259,14 @@ body {
 
   li a {
     color: #fff;
-    background-color: none;
+  }
+
+  .mark1 {
+    font-size: 0.4rem;
   }
 
   .req, .new,.apo {
     letter-spacing: 2px;
-  }
-
-  .req::before, .new::before, .apo::before {
-    content: "▶";
-    -webkit-tap-highlight-color: transparent; 
-    display: inline-block;
-    color: #fff;
-    font-size: 7px;
-    margin: 3px 13px;
-    font-weight: bold;
   }
 
   .slideshow-wrapper {
@@ -802,9 +796,11 @@ body {
   text-decoration: underline;
 }
 
-.company-summary img {
-  width: 20%;
+
+.company-summary {
+  margin-top: 2px;
 }
+
 
 .home a,.interview a,.job-description a,.job-description a,.news a,.company-summary a{
   color: black;

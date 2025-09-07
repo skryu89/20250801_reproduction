@@ -1314,9 +1314,11 @@ body {
   text-decoration: underline;
 }
 
-.company-summary img {
-  width: 20%;
+
+.company-summary {
+  margin-top: 2px;
 }
+
 
 .home a,.interview a,.job-description a,.news a,.company-summary a{
   color: black;
