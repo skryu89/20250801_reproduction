@@ -271,6 +271,10 @@ body {
     letter-spacing: 2px;
   }
 
+  .main-content {
+    background-color: #FCF9F4;
+  }
+
   .slideshow-wrapper {
     position: relative;
     top :-20px;
@@ -348,7 +352,7 @@ body {
   .requirement-container {
     border: 0.5px solid #D92B44;
     border-radius: 20px;
-    margin: 10px 15px;
+    margin: 10px 17px;
     width: auto;
     position: relative;
     z-index: 1;
@@ -417,11 +421,12 @@ body {
     font-weight: 600;
   }
 
-  .entry-container {
+  .entry-wrapper {
     border: 0.5px solid #D92B44;
     border-radius: 20px;
-    margin: 35px 15px;
+    margin: 35px 17px;
     width: auto;
+    height: 75vh;
     position: relative;
     z-index: 1;
   }
@@ -430,7 +435,7 @@ body {
     color: #D92B44;
     background-color: #FFEDEF;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     white-space: nowrap;
     text-align: center;
     width: 90%;
@@ -448,14 +453,97 @@ body {
     display: block;
   }
 
+  .step {
+    width: 27%;
+    height: 27px;
+    line-height: 27px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    background-color: #D92B44;
+    color:  #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    position: relative;
+    top: 10px;
+    z-index: 5;
+  }
+
+  .flow1,.flow2,.flow3,.flow4 {
+    border: 1px solid #D92B44;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: -12px;
+    padding-top : 25px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 0.7px;
+    width: 85%;
+    position: relative;
+    top: 8px;
+    z-index: 1;
+  }
+
+  .flow2,.flow3,.flow4 {
+    letter-spacing: 2px;
+  }
+
+  .concretion {
+    display: inline-block;
+    margin-top:20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
   .apply {
     display: block;
     width: 90%;
     margin: 10px auto;
-    padding: 10px;
+    padding: 15px 10px;
     border: 1px solid #D92B44;
     color: #D92B44;
-    
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .back-to-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin: 30px auto;
+  }
+
+  .back {
+    background-color: #D92B44;
+    color: #fff;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-radius: 8px;
+  }
+
+  .mark2 {
+    background-color: #D92B44;
+    color: #fff;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    margin-left: -12px;
   }
 
   
