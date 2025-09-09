@@ -423,11 +423,22 @@ body {
   .entry-wrapper {
     border: 0.5px solid #D92B44;
     border-radius: 20px;
-    margin: 35px 15px;
+    margin: 40px 17px;
     width: auto;
-    height: 75vh;
+    height: 510px;
     position: relative;
     z-index: 1;
+  }
+
+  
+  .vertical {
+  position: absolute;
+  height: 400px;
+  top: 80px;       
+  bottom: 0;
+  left: 50%;        
+  border-right: 4px solid #FFEDEF; 
+  z-index: 1;
   }
   
   .entry {
@@ -466,7 +477,7 @@ body {
     margin-left: 40px;
     position: relative;
     top: 10px;
-    z-index: 5;
+    z-index: 15;
   }
 
   .flow1,.flow2,.flow3,.flow4 {
@@ -479,41 +490,19 @@ body {
     margin-top: -12px;
     padding-top : 25px;
     padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    letter-spacing: 0.7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 2px;
     width: 85%;
     position: relative;
     top: 8px;
-    z-index: 1;
+    z-index: 10;
+    background: #fff
   }
+
 
   .flow2,.flow3,.flow4 {
     letter-spacing: 2px;
-  }
-
-  .concretion {
-    display: inline-block;
-    margin-top:20px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
-
-  .apply {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    padding: 15px 10px;
-    border: 1px solid #D92B44;
-    color: #D92B44;
-    text-align: center;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border-radius: 5px;
   }
 
   .back-to-list {
@@ -522,6 +511,7 @@ body {
     align-items: center;
     font-weight: 600;
     margin: 30px auto;
+    margin-top: -10px;
   }
 
   .back {
@@ -533,16 +523,17 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
     border-radius: 8px;
+    margin-left: -12px;
   }
 
   .mark2 {
+    width: 9%;
     background-color: #D92B44;
     color: #fff;
     padding: 8px;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 15px;
     border-radius: 8px;
-    margin-left: -12px;
   }
 
   
