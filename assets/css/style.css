@@ -920,7 +920,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     font-family: 'Roboto Flex', sans-serif;
     font-style: oblique;
     font-weight: 100;
-    font-size: 12.1vw; 
+    font-size: 300%; 
     right: 37%;
     letter-spacing: 0.51vw;
     white-space: nowrap;
@@ -1036,7 +1036,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
  .passages {
   background-color: #d40020;
-  margin-top: 215px;
+  margin-top: 60%;
   position: relative;
   z-index: 2;
  }
