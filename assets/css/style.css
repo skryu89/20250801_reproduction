@@ -666,13 +666,15 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     width: 100%;
     height: auto;      
     box-sizing: border-box;
+    position: relative;
+    z-index: 1;
   }
 
 
  .header-logo {
     position: fixed;
-    top: -25px;
-    left: 20px;
+    top: -5px;
+    left: 15px;
     z-index: 10; 
     width: 49%;
     height: 65px;
@@ -697,7 +699,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     font-size: 12px;
     font-weight: 600;
     margin-top: 1px;
-    margin-left: 20px;
+    margin-left: 10px;
     letter-spacing: 1px;
   }
 
@@ -797,11 +799,9 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .home_news--wrap {
     display: flex;
     align-items: center; 
-    position: relative;
-    z-index: 1; 
     width: 100%;
     max-width: 390px; 
-    margin: 7.37% auto; 
+    margin: 13.37% auto; 
   }
 
   .news_list1 a {
@@ -862,54 +862,60 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   }
   
 
-  
   .hero {
     width: 100%;
+    margin: 0 auto;
     margin-top: 30px;
     margin-left: 30px;
   }
 
   .visual-area {
     position: relative;
-    left: -5%;
+    z-index: 10;
+    left: -8.5%;
     top: -5%;
-    width: 80%;      
+    width: 100%;      
     max-width: 100%;   
-    height: 100%; 
+    height: 110%; 
     margin: 0 auto;   
     overflow-x: hidden;
   }
 
   .text-wrapper {
     position: absolute;
-    left: 13%; 
-    top: 33.18%; 
+    left: 15%; 
+    top: 36.1%; 
     width: 40.5%; 
     color: #b9b6b6; 
     text-align: center;
   }
 
   .NEW-MID {
+    width: 100%;
+    height: auto;
+    margin-top: 22%;
     font-weight: 600;
     font-size: 4.8vw; 
     right: 28.9%; 
     letter-spacing: 0.1vw;
     white-space: nowrap;
-    width: 100%;
-    height: auto;
     color: #b9b6b6;
-    letter-spacing: 0.513vw; 
+    letter-spacing: 0.51vw; 
   }
 
   .RECRUIT {
-    font-weight: 100;
-    font-size: 11.1vw; 
-    right: 30.4%;
-    letter-spacing: 0.51vw;
-    white-space: nowrap;
     width: 100%;
     height: auto;
+    margin-top: 28%;
     color: #b9b6b6;
+    font-family: 'Roboto Flex', sans-serif;
+    font-style: oblique;
+    font-weight: 100;
+    font-size: 12.1vw; 
+    right: 30.7%;
+    letter-spacing: 0.51vw;
+    white-space: nowrap;
+    transform: scaleY(0.8);
   }
 
   .letter {
@@ -917,37 +923,35 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     height: 24.6%;
   }
 
-  .s1 { position: absolute; left: -1.28%; top: 9.34%; width: 33.3%;   }
+  .s1 { position: absolute; left: 2.1%; top: 17.2%; width: 37.3%;   }
   .s1 img { width: 100%; height: auto; }
 
-  .h1 { position: absolute; left: 26.92%; top: 19.67%; width: 25.64%; }
+  .h1 { position: absolute; left: 32.3%; top: 26.1%; width: 29.9%; }
   .h1 img { width: 100%; height: auto; }
 
-  .o { position: absolute; left: 52.56%; top: 12.29%; width: 26.92%; }
+  .o { position: absolute; left: 62.4%; top: 21.2%; width: 29.6%; }
   .o img { width: 100%; height: auto; }
 
-  .s2 { position: absolute; left: -6.41%; top: 65.83%; width: 33.3%; }
+  .s2 { position: absolute; left: -4.41%; top: 63.1%; width: 37.3%; }
   .s2 img { width: 100%; height: auto; }
 
-  .h2 { position: absolute; left: 18.51%; top: 78.59%; width: 29.92%; }
+  .h2 { position: absolute; left: 25.1%; top: 74.4%; width: 29.9%; }
   .h2 img { width: 100%; height: 100%; }
 
-  .i { position: absolute; left: 41.02%; top: 73.2%; width: 27.64%; }
+  .i { position: absolute; left: 47.2%; top: 70.2%; width: 30.6%; }
   .i img { width: 100%; height: auto; }
 
-  .n { position: absolute; left: 63.58%; top: 64.1%; width: 25.64%; }
+  .n { position: absolute; left: 72.9%; top: 63.1%; width: 29.1%; }
   .n img { width: 100%; height: auto; }
 
   .plant, .person { position: absolute; height: auto; }
-  .plant { left: 16.67%; top: 17.20%; width: 10.26%; }
-  .person.p1 { left: -1.28%; top: 28.28%; width: 17.94%; }
+  .plant { left: 22.6%; top: 24.2%; width: 11.4%; }
+  .person.p1 { left: 2.3%; top: 34.1%; width: 18.6%; }
   .person.p2 { display: none; }
-  .person.p3 { left: 32.05%; top: 27.05%; width: 24.35%; z-index: 5; }
-  .person.p4 { left: 22.31%; top: 65.83%; width: 14.10%; }
-  .person.p5 { left: 59.1%; top: 21%; width: 33.3%; z-index: 10; }
-  .person.p6 { left: 50%; top: 58.99%; width: 20.51%; }
-
-
+  .person.p3 { left: 39.05%; top: 33.1%; width: 26.2%; z-index: 5; }
+  .person.p4 { left: 27.9%; top: 65.83%; width: 15.1%; }
+  .person.p5 { left: 69.1%; top: 26.9%; width: 35.3%; z-index: 20; }
+  .person.p6 { left: 58.1%; top: 57.9%; width: 22.4%; }
 
 
   .text {
@@ -966,6 +970,8 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     text-decoration-color: #000000;
     padding-bottom: 0.5em;  
   }
+
+
   .text1 { font-size: 9.83vw; }
   .text2 { font-size: 7.27vw; }
   .text3 { 
@@ -1379,10 +1385,12 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   height: auto;
   border: 3px solid #000; 
   padding: 20px;
-  margin-top: -75px;
   padding-bottom: 100px;
   background-color: #f9f9f9; 
   box-sizing: border-box; 
+  position: relative;
+  top: -70px;
+  z-index: 10;
 }
 
 .logo-logo {
