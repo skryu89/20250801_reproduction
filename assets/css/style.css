@@ -796,7 +796,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
    }
 
 
-  .home_news--wrap {
+  .home_news {
     display: flex;
     align-items: center; 
     width: 100%;
@@ -807,10 +807,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   .news_list1 a {
     display: block;
-    width: 160%;
-    margin-top: 10%;
-    margin-left: -50%;
-    padding: 9.2% 19%; 
+    margin-left: 20%;
     border-radius: 10px; 
     background-color: #D92B44;
     color: #fff;
@@ -839,10 +836,12 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .news_list2 a {
     display: flex;
     align-items: center;
-    width: 130%;
+    width: 110%;
     height: 100%;
     padding: 5.0% 10%;
-    margin-left: -10.8%;
+    margin: 0 auto;
+    margin-top: 35%;
+    margin-bottom: 10%;
     background-color: #FFEDEF;
     color: #D92B44;
     text-decoration: none;
@@ -850,8 +849,11 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     border-radius: 30px;
     z-index: 1;
     position: relative;
-    top: -0.37%; 
     font-size: 3.33vw; 
+  }
+
+   .news_list1 .news {
+    width: 110%;
   }
 
   .news_list2 .date {
@@ -892,6 +894,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   .text-wrapper {
     position: absolute;
+    height: 50%;
     left: 15%; 
     top: 36.1%; 
     width: 40.5%; 
@@ -964,16 +967,16 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 
   .text {
-    position: relative; 
-    top: -15%;
+    position: relative;
     left: -23.5%;
+    margin-top: -25%;
     margin-left: -0.7%; 
     padding: 0 29%; 
     white-space: nowrap;
     letter-spacing: 1.0vw;
   }
 
-  .text1, .text2, .text3 {
+  .text1, .text2, .text3, .text4 {
     background-color: #fff;
     font-weight: bold;
     text-decoration-color: #000000;
@@ -984,15 +987,15 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .text1 { font-size: 9.83vw; }
   .text2 { font-size: 7.27vw; }
   .text3 { 
-    font-size: 12.19vw;
-    letter-spacing: -0.5vw;
+    font-size: 12.3vw;
+    letter-spacing: -0.6vw;
   }
 
-  .text4 { 
-    font-size: 3.33vw;
-    margin-top: -170%; 
+  .text4 {
+    font-size: 3.4vw; 
+    margin-top: -150%; 
     margin-left: 180%; 
-    letter-spacing: 0.38vw;
+    letter-spacing: 1.5px;
     writing-mode: vertical-rl;
     text-decoration: underline; 
     text-underline-position: under left;
@@ -1002,13 +1005,13 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   .writings {
     width: 100%;
-    margin-top: 40%;
+    margin-top: 30%;
   }
 
   .writing {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-top: -8px;
-    margin: 0 7%;
+    margin: 0 5%;
     letter-spacing: 2.0px;
     white-space: normal;
   }
@@ -1023,12 +1026,12 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   img.men, img.pencil, img.the-future, img.message {
     position: absolute; 
-    max-width: 100%; 
+    max-width: 98%; 
     height: auto; 
     z-index: 1;
   }
 
-  img.men { left: 25%; top: 690%; width: 100%; }
+  img.men { left: 24%; top: 690%; width: 100%; }
   img.pencil { display: none; }
   img.the-future { display: none; }
   img.message { display: none; }
