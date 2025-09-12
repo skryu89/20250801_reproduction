@@ -1068,6 +1068,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   border-top: 1px solid #fff;
   background-color: #d40020;
  }
+
+ .company-seniors {
+  background-color: #2971b9;
+ }
   
  .company-seniors img {
   display: block;
@@ -1101,13 +1105,46 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   text-align: center; 
   line-height: 50px; 
   display: inline-block; 
-  margin: 10px; 
+  margin: -30px; 
+  margin-left: 300px;
 }
 
 .intro6 {
   position: absolute;
   z-index: 5;
-  margin-top: 40%;
+  margin-top: 0%;
+}
+
+.intro6 a {
+  text-decoration: none;
+}
+
+.number {
+  font-size: 3rem;
+  font-weight: 100;
+
+}
+
+.rewarding1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 0;
+  color: #000;
+  background-color: #fff;
+}
+
+.rewarding2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 0;
+  color: #000;
+  background-color: #fff;
+}
+
+.self-introduction {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .s6 {
