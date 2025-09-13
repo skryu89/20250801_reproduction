@@ -1,25 +1,23 @@
 $(document).ready(function () {
- //$('.company-seniors').slick({
-    slidesToShow: 3,
+  $('.company-seniors').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0,
-    speed: 7000,
-    cssEase: 'linear',
+    autoplaySpeed: 5000, 
+    speed: 500,
     infinite: true,
     arrows: false,
     pauseOnHover: false,
-    variableWidth: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          variableWidth: false
         }
       }
     ]
   });
+
 
 $(".hamburger").on("click", function () {
     $(this).toggleClass("open");     
