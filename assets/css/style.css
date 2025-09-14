@@ -917,6 +917,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     font-style: oblique;
     font-weight: 100;
     font-size: 12vw; 
+    right: 80%;
     letter-spacing: 0.48vw;
     white-space: nowrap;
     transform: scaleY(0.8);
