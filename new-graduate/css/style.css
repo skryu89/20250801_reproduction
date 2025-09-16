@@ -857,11 +857,14 @@ body {
   right: 0;
 }
 
-
 .company-information {
+  border: 3px solid #000;
+  border-bottom: none;
   width: 100%;
   height: auto;
   padding: 20px;
+  padding-bottom: 40px;
+  margin-bottom: -20px;
   background-color: #f9f9f9; 
   box-sizing: border-box; 
   position: relative;
@@ -921,7 +924,7 @@ body {
   line-height: 60px;       
   text-align: center;
   position: fixed;   
-  bottom: 0;               
+  bottom: 0;             
   left: 0;                  
   z-index: 15;         
 }

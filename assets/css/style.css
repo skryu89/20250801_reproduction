@@ -1236,7 +1236,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   background-color: #979592; 
   background-blend-mode: multiply; 
   background-repeat: no-repeat;
-  background-position: center 120%;
+  background-position: center 10%;
 }
 
 .slogan svg {
@@ -1331,8 +1331,6 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   left: 46%;
   z-index: 1;
 }
-
-
 
 
 .side {
