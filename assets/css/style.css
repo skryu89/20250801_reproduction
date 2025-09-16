@@ -1253,11 +1253,11 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   height: 400px;
   background-image:url(../img/future-bg.jpg);
   background-attachment: fixed;
-  background-size: 200%;
+  background-size: 800px;
   background-color: #979592; 
   background-blend-mode: multiply; 
   background-repeat: no-repeat;
-  background-position: center 10%;
+  background-position: center 50px;
 }
 
 .slogan svg {
