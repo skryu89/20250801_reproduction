@@ -1239,6 +1239,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   z-index: 10;
   bottom: 60px;
   border-radius: 5px;
+  background-image: url(../img/future-bg.jpg);
 }
 
 /*
