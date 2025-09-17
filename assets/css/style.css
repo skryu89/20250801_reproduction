@@ -1241,23 +1241,54 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   border-radius: 5px;
 }
 
-.slogan-container {
-  width: 120%;
+/*
+.fixed-background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  z-index: -1; 
 }
 
+.back-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.5); 
+}
+
+
+.scrollable-content-layer {
+  position: relative; 
+  z-index: 1; 
+}
+
+
 .slogan-wrapper {
-  position: relative;
-  z-index: 1;
-  left: -10%;
-  height: 400px;
-  background-image:url(../img/future-bg.jpg);
-  background-attachment: fixed;
-  background-size: 800px;
-  background-color: #979592; 
-  background-blend-mode: multiply; 
-  background-repeat: no-repeat;
-  background-position: center 50px;
+  height: 400px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slogan {
+  position: relative; 
+  width: 100%;
+  height: 100%;
 }
 
 .slogan svg {
@@ -1266,92 +1297,22 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   position: absolute;
   top: 30%;
   left: 23%;
-  z-index: 1;
 }
 
-.word1 {
-  display: inline-block;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 500;
+.word1, .word2, .word3, .word4, .word5, .word6, .word7 {
   position: absolute;
-  top: 31%;
-  left: 77%;
-  z-index: 1;
-}
-
-.word2 {
   display: inline-block;
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-  position: absolute;
-  top: 43%;
-  left: 28%;
-  z-index: 1;
+
 }
 
-
-.word3 {
-  display: inline-block;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 500;
-  position: absolute;
-  top: 46%;
-  left: 46%;
-  z-index: 1;
-}
-
-
-.word4 {
-  display: inline-block;
-  color: #d40020;
-  font-size: 45px;
-  letter-spacing: 3px;
-  font-weight: 700;
-  position: absolute;
-  top: 40%;
-  left: 53%;
-  z-index: 1;
-}
-
-
-.word5 {
-  display: inline-block;
-  color: #fff;
-  font-size: 25px;
-  letter-spacing: 5px;
-  font-weight: 700;
-  position: absolute;
-  top: 45%;
-  left: 76%;
-  z-index: 1;
-}
-
-
-.word6 {
-  display: inline-block;
-  color: #fff;
-  font-size: 35px;
-  font-weight: 700;
-  position: absolute;
-  top: 57%;
-  left: 37%;
-  z-index: 1;
-}
-
-
-.word7 {
-  display: inline-block;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  position: absolute;
-  top: 58%;
-  left: 46%;
-  z-index: 1;
-}
+.word1 { color: #fff; font-size: 25px; font-weight: 500; top: 31%; left: 77%; }
+.word2 { color: #fff; font-size: 35px; font-weight: 600; top: 43%; left: 28%; }
+.word3 { color: #fff; font-size: 25px; font-weight: 500; top: 46%; left: 46%; }
+.word4 { color: #d40020; font-size: 45px; letter-spacing: 3px; font-weight: 700; top: 40%; left: 53%; }
+.word5 { color: #fff; font-size: 25px; letter-spacing: 5px; font-weight: 700; top: 45%; left: 76%; }
+.word6 { color: #fff; font-size: 35px; font-weight: 700; top: 57%; left: 37%; }
+.word7 { color: #fff; font-size: 30px; font-weight: 700; top: 58%; left: 46%; }
+*/
 
 
 .side {
