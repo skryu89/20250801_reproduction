@@ -766,6 +766,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 
    .nav-menu {
+      display: none;
       box-sizing: border-box;
       border: 20px solid #D92B44;
       border-top: none;
@@ -1255,7 +1256,6 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   background-image:url(../img/future-bg.jpg);
   background-attachment: fixed;
   background-size: 800px;
-  background-color: #979592; 
   background-blend-mode: multiply; 
   background-repeat: no-repeat;
   background-position: center 50px;
