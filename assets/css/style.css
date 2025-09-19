@@ -1308,7 +1308,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   font-size: 25px;
   font-weight: 500;
   position: absolute;
-  top: 326%;
+  margin-top: -40px;
   left: 77%;
   z-index: 1;
 }
