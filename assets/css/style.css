@@ -983,37 +983,54 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 
   .text-wrapper {
-  background-color: #007BFF; /* 好きな青に変更可能 */
-  width: 100%;               /* セクション全体を横幅いっぱいに */
-  padding-top: 300px;          /* 上下に余白をつける */
-  box-sizing: border-box;  
+  background-color: #fff; 
+  width: 100%;                       
+  position: relative;
+  z-index: 35;
+  top: -50%;
   }
 
-  .text1, .text2, .text3, .text4 {
+  .texts {
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-left: -120px;
+    border: 20px solid #D92B44;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #000;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .text1, .text2, .text3 {
     background-color: #fff;
     font-weight: bold;
-    text-decoration-color: #000;
-    padding-bottom: 0.5em; 
     color: #000;
   }
-
 
   .text1 { font-size: 9.83vw; }
   .text2 { font-size: 7.27vw; }
   .text3 { 
-    font-size: 12.3vw;
+    font-size: 11.3vw;
     letter-spacing: -0.6vw;
   }
 
   .text4 {
     font-size: 3.4vw; 
-    margin-top: -150%; 
-    margin-left: 180%; 
     letter-spacing: 1.5px;
+    text-align: left;
+    margin-top: -180px;
+    margin-left: 190px;
     writing-mode: vertical-rl;
     text-decoration: underline; 
     text-underline-position: under left;
     text-decoration-color: red;
+    font-weight: bold;
+    color: #000;
   }
 
 
@@ -1023,7 +1040,9 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     border-bottom: none;
     background-color: #fff;
     width: 100%;
-    margin-top: 30%;
+    margin-top: 15%;
+    padding: 50px 0;
+    padding-bottom: 300px;
   }
 
   .writing {
@@ -1044,12 +1063,12 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
   img.men, img.pencil, img.the-future, img.message {
     position: absolute; 
-    max-width: 98%; 
+    max-width: 90%; 
     height: auto; 
     z-index: 1;
   }
 
-  img.men { left: 24%; top: 530%; width: 100%; }
+  img.men { left: -25%; top: 600px; width: 100%; }
   img.pencil { display: none; }
   img.the-future { display: none; }
   img.message { display: none; }
@@ -1057,7 +1076,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
  .passages {
   background-color: #D92B44;
-  margin-top: 60%;
+  margin-top: 0%;
   width: 100%;
   height: 300px;
   position: relative;
