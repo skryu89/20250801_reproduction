@@ -662,7 +662,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     position: fixed;
     top: -5px;
     left: 15px;
-    z-index: 10; 
+    z-index: 90; 
     width: 49%;
     height: 65px;
     border-bottom-left-radius: 20px;
@@ -766,7 +766,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
       margin-top: -50px;
       background-color: #fff;
       opacity: 1.0;
-      z-index: 15;
+      z-index: 80;
    }
 
   .nav-menu ul {
@@ -1075,7 +1075,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   }
 
   img.men { left: -25%; top: 580px; width: 100%; position: absolute; z-index: -10;}
-  img.trees { left:-25%; top: 580px; width: 100%; position: absolute;  z-index: -30;}
+  img.trees { left:-25.9%; top: 580px; width: 100%; position: absolute;  z-index: -30;}
   img.pencil { display: none; }
   img.the-future { display: none; }
   img.message { display: none; }
@@ -1087,7 +1087,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   height: 300px;
   position: relative;
   top: -80px;
-  z-index: 100;
+  z-index: 50;
  }
 
  .passage_1-2 {
@@ -1453,6 +1453,21 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   margin: 0; 
 }
 
+.recruit-link:active .button-box1 {
+  background-image: url('../img/imgi_8_bnr-requirements01.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.recruit-link:active .overlay-text1,
+.recruit-link:active .recruit-en1 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.recruit-link:active .overlay-text1 {
+  border-bottom: 3px solid #fff;
+}
 
 .button-box2 {
   display: inline-block;
@@ -1483,10 +1498,26 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   margin: 0; 
 }
 
+.recruit-link:active .button-box2 {
+  background-image: url('../img/imgi_9_bnr-requirements02.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.recruit-link:active .overlay-text2,
+.recruit-link:active .recruit-en2 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.recruit-link:active .overlay-text2 {
+  border-bottom: 3px solid #fff;
+}
 
 .recruit-link {
   text-decoration: none;
   color: inherit;
+  -webkit-tap-highlight-color: transparent; 
 }
 
 .recruit-content {
