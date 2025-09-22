@@ -241,6 +241,11 @@ body {
     font-size: 20px;
     color: #fff;
     background-color: #000;
+    text-align: center;
+   }
+
+   .shoshin {
+    text-align: center;
    }
 
    .arrow {

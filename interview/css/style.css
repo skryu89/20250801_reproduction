@@ -236,6 +236,11 @@ body {
     font-size: 20px;
     color: #fff;
     background-color: #000;
+    text-align: center;
+   }
+
+   .shoshin {
+    text-align: center;
    }
 
    .arrow {
@@ -383,7 +388,7 @@ body {
 
 .side {
   width: 100%;
-  border-bottom: 20px solid #d40020;
+  border-bottom: 20px solid #D92B44;
 }
 
 .requirements {
