@@ -941,15 +941,15 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .RECRUIT {
     position: absolute;
     z-index: 1;
-    width: 80%;
+    width: 100%;
     height: auto;
     top: -50%;
-    right: 25%;
+    left: 5%;
     color: #b9b6b6;
     font-family: 'Roboto Flex', sans-serif;
     font-style: oblique;
     font-weight: 100;
-    font-size: 12vw; 
+    font-size: 10vw; 
     letter-spacing: 0.48vw;
     white-space: nowrap;
     transform: scaleY(0.8);
@@ -1075,7 +1075,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     height: auto; 
   }
 
-  img.men { left: -25%; top: 580px; width: 100%; position: absolute; z-index: -10;}
+  img.men { left: -25%; top: 590px; width: 100%; position: absolute; z-index: -10;}
   img.trees { left:-25.9%; top: 580px; width: 100%; position: absolute;  z-index: -30;}
   img.pencil { display: none; }
   img.the-future { display: none; }
@@ -1424,18 +1424,18 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   display: inline;
 }
 
-
 .button-box1 {
   display: inline-block;
   border: 1px solid #d40020;
   background: #fff5f7;
   text-align: center;
-  width: 90%;       
-  height: auto;        
-  padding: 1.5rem 1.9rem;  
+  width: 90%;
+  height: auto;
+  padding: 1.5rem 1.9rem;
   margin: 1rem auto;
   position: relative;
   box-shadow: 0 0 0 4px #fff5f7;
+  color: #000;
 }
 
 .overlay-text1 {
@@ -1444,29 +1444,28 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   font-weight: bold;
   border-bottom: 3px solid #000;
   display: inline-block;
-  margin: 0 0 ; 
+  margin: 0;
 }
 
 .recruit-en1 {
   font-size: 0.8rem;
   font-weight: 300;
   letter-spacing: 0.1em;
-  margin: 0; 
+  margin: 0;
 }
 
-.recruit-link:active .button-box1 {
+
+.recruit-link-1.clicked .button-box1 {
   background-image: url('../img/imgi_8_bnr-requirements01.jpg');
   background-size: cover;
   background-position: center;
 }
-
-.recruit-link:active .overlay-text1,
-.recruit-link:active .recruit-en1 {
+.recruit-link-1.clicked .overlay-text1,
+.recruit-link-1.clicked .recruit-en1 {
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
-
-.recruit-link:active .overlay-text1 {
+.recruit-link-1.clicked .overlay-text1 {
   border-bottom: 3px solid #fff;
 }
 
@@ -1481,6 +1480,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   margin: 1rem auto;
   position: relative;
   box-shadow: 0 0 0 4px #E3F2FF;
+  color: #000;
 }
 
 .overlay-text2 {
@@ -1499,19 +1499,17 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   margin: 0; 
 }
 
-.recruit-link:active .button-box2 {
+.recruit-link-2.clicked .button-box2 {
   background-image: url('../img/imgi_9_bnr-requirements02.jpg');
   background-size: cover;
   background-position: center;
 }
-
-.recruit-link:active .overlay-text2,
-.recruit-link:active .recruit-en2 {
+.recruit-link-2.clicked .overlay-text2,
+.recruit-link-2.clicked .recruit-en2 {
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
-
-.recruit-link:active .overlay-text2 {
+.recruit-link-2.clicked .overlay-text2 {
   border-bottom: 3px solid #fff;
 }
 

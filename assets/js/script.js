@@ -47,3 +47,35 @@ window.addEventListener('load', updateSlide);
 window.addEventListener('resize', updateSlide);
 
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  const recruitLink1 = document.querySelector('.recruit-link-1');
+
+  if (recruitLink1) {
+    recruitLink1.addEventListener('click', function(event) {
+      event.preventDefault();
+      this.classList.add('clicked');
+      const destination = this.href;
+      setTimeout(function() {
+        window.location.href = destination;
+      }, 300);
+    });
+  }
+
+  const recruitLink2 = document.querySelector('.recruit-link-2');
+
+  if (recruitLink2) {
+    recruitLink2.addEventListener('click', function(event) {
+      event.preventDefault();
+      this.classList.add('clicked');
+      const destination = this.href;
+      setTimeout(function() {
+        window.location.href = destination;
+      }, 300);
+    });
+  }
+
+});
+
+
