@@ -930,6 +930,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     height: auto;
     top: 100%;
     right: 16%; 
+    margin-top: 33px;
     font-weight: 600;
     font-size: 4.8vw; 
     letter-spacing: 0.1vw;
@@ -944,12 +945,12 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     width: 100%;
     height: auto;
     top: -50%;
-    left: 5%;
+    left: 1%;
     color: #b9b6b6;
     font-family: 'Roboto Flex', sans-serif;
     font-style: oblique;
     font-weight: 100;
-    font-size: 10vw; 
+    font-size: 12vw; 
     letter-spacing: 0.48vw;
     white-space: nowrap;
     transform: scaleY(0.8);
@@ -1075,7 +1076,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     height: auto; 
   }
 
-  img.men { left: -25%; top: 590px; width: 100%; position: absolute; z-index: -10;}
+  img.men { left: -25%; top: 600px; width: 100%; position: absolute; z-index: -10;}
   img.trees { left:-25.9%; top: 580px; width: 100%; position: absolute;  z-index: -30;}
   img.pencil { display: none; }
   img.the-future { display: none; }
@@ -1504,11 +1505,13 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   background-size: cover;
   background-position: center;
 }
+
 .recruit-link-2.clicked .overlay-text2,
 .recruit-link-2.clicked .recruit-en2 {
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
+
 .recruit-link-2.clicked .overlay-text2 {
   border-bottom: 3px solid #fff;
 }

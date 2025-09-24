@@ -437,6 +437,7 @@ body {
   margin: 1rem auto;
   position: relative;
   box-shadow: 0 0 0 4px #fff5f7;
+  color: #000;
 }
 
 .overlay-text1 {
@@ -455,6 +456,20 @@ body {
   margin: 0; 
 }
 
+.recruit-link-1.clicked .button-box1 {
+  background-image: url('../img/imgi_12_bnr-requirements01.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.recruit-link-1.clicked .overlay-text1,
+.recruit-link-1.clicked .recruit-en1 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.recruit-link-1.clicked .overlay-text1 {
+  border-bottom: 3px solid #fff;
+}
+
 
 .button-box2 {
   display: inline-block;
@@ -467,6 +482,7 @@ body {
   margin: 1rem auto;
   position: relative;
   box-shadow: 0 0 0 4px #E3F2FF;
+  color: #000;
 }
 
 .overlay-text2 {
@@ -483,6 +499,22 @@ body {
   font-weight: 300;
   letter-spacing: 0.1em;
   margin: 0; 
+}
+
+.recruit-link-2.clicked .button-box2 {
+  background-image: url('..img/imgi_13_bnr-requirements02.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.recruit-link-2.clicked .overlay-text2,
+.recruit-link-2.clicked .recruit-en2 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.recruit-link-2.clicked .overlay-text2 {
+  border-bottom: 3px solid #fff;
 }
 
 

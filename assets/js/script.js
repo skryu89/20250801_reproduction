@@ -78,4 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-
+ window.addEventListener('pagehide', function() {
+    if (recruitLink1) {
+      recruitLink1.classList.remove('clicked');
+    }
+    if (recruitLink2) {
+      recruitLink2.classList.remove('clicked');
+    }
+});
