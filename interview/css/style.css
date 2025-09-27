@@ -425,7 +425,6 @@ body {
   display: inline;
 }
 
-
 .button-box1 {
   display: inline-block;
   border: 1px solid #d40020;
@@ -502,7 +501,7 @@ body {
 }
 
 .recruit-link-2.clicked .button-box2 {
-  background-image: url('..img/imgi_13_bnr-requirements02.jpg');
+  background-image: url('../img/imgi_13_bnr-requirements02.jpg');
   background-size: cover;
   background-position: center;
 }

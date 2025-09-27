@@ -462,7 +462,7 @@ body {
     border-radius: 20px;
     margin: 40px 17px;
     width: auto;
-    height: 510px;
+    height: 540px;
     position: relative;
     z-index: 1;
   }
@@ -551,6 +551,10 @@ body {
     margin-top: -10px;
   }
 
+  .back-to-list a {
+    text-decoration: none;
+  }
+
   .back {
     background-color: #D92B44;
     color: #fff;
@@ -560,7 +564,7 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
     border-radius: 8px;
-    margin-left: -12px;
+    margin-left: -7px;
   }
 
   .mark2 {
@@ -568,15 +572,16 @@ body {
     background-color: #D92B44;
     color: #fff;
     padding: 8px;
-    padding-left: 10px;
-    padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 25px;
+    margin-bottom: -8px;
     border-radius: 8px;
   }
 
-  
+ 
 .side {
   width: 100%;
-  border-bottom: 20px solid #d40020;
+  border-bottom: 20px solid #D92B44;
 }
 
 .requirements {
@@ -613,7 +618,6 @@ body {
   display: inline;
 }
 
-
 .button-box1 {
   display: inline-block;
   border: 1px solid #d40020;
@@ -625,6 +629,7 @@ body {
   margin: 1rem auto;
   position: relative;
   box-shadow: 0 0 0 4px #fff5f7;
+  color: #000;
 }
 
 .overlay-text1 {
@@ -643,6 +648,20 @@ body {
   margin: 0; 
 }
 
+.recruit-link-1.clicked .button-box1 {
+  background-image: url('../img/imgi_5_bnr-requirements01.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.recruit-link-1.clicked .overlay-text1,
+.recruit-link-1.clicked .recruit-en1 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.recruit-link-1.clicked .overlay-text1 {
+  border-bottom: 3px solid #fff;
+}
+
 
 .button-box2 {
   display: inline-block;
@@ -655,6 +674,7 @@ body {
   margin: 1rem auto;
   position: relative;
   box-shadow: 0 0 0 4px #E3F2FF;
+  color: #000;
 }
 
 .overlay-text2 {
@@ -673,6 +693,23 @@ body {
   margin: 0; 
 }
 
+.recruit-link-2.clicked .button-box2 {
+  background-image: url('../img/imgi_6_bnr-requirements02.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.recruit-link-2.clicked .overlay-text2,
+.recruit-link-2.clicked .recruit-en2 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.recruit-link-2.clicked .overlay-text2 {
+  border-bottom: 3px solid #fff;
+}
+
+
 .recruit-link {
   text-decoration: none;
   color: inherit;
@@ -682,6 +719,7 @@ body {
   display: inline-block;
   position: relative;
 }
+
 
 .Entry {
   color: transparent;                
