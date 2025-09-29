@@ -284,15 +284,15 @@ body {
   }
 
   .man1,.man2,.man3,.woman1,.woman2,.woman3 {
-    width: auto;
-    height: 90vh;
-    transform: translateX(-20px);
+    width: 120%;
+    height: 100%;
+    transform: translateX(-10%);
     border-radius: 30px;
   }
 
   .senior1,.senior2,.senior3,.senior4,.senior5,.senior6 {
     margin: 130px auto;
-    width: 75%;
+    width: 83%;
     position: relative;
     overflow-x: hidden;
     background-color: #fff;
@@ -334,13 +334,14 @@ body {
     padding: 6px 0;
     font-size: 15px;
     font-weight: 500;
-    margin-top: -40px;
+    margin-top: -20px;
     background-color: #d40020;
     position: absolute;
 }
 
 .season {
   margin-left: 10px;
+  white-space: nowrap;
 }
 
   
@@ -350,12 +351,13 @@ body {
   color: #fff;
   height: 25px;
   line-height: 25px;
-  padding-left: 80px;
+  position: absolute;
+  left: 85%;
 }
 
 .mark2 {
   font-size: 8px;
-  padding-left: 5px;
+  padding-left: 10%;
 }
 
 
@@ -936,7 +938,7 @@ body {
     font-weight: 700;
    }
   
-    .Interviews {
+   .Interviews {
     position: relative;
     background-color: #D92B44;
     color: #fff;
@@ -1056,13 +1058,14 @@ body {
     padding: 6px 0;
     font-size: 15px;
     font-weight: 500;
-    margin-top: -40px;
+    margin-top: -20px;
     background-color: #d40020;
     position: absolute;
 }
 
 .season {
   margin-left: 10px;
+  white-space: nowrap;
 }
 
   
@@ -1072,7 +1075,7 @@ body {
   color: #fff;
   height: 25px;
   line-height: 25px;
-  padding-left: 80px;
+  margin-left: -15px;
 }
 
 .mark2 {
