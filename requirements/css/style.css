@@ -213,7 +213,7 @@ body {
    }
 
 
-.Requirements {
+ .Requirements {
     position: relative;
     background-color: #D92B44;
     color: #fff;
@@ -221,38 +221,39 @@ body {
     text-decoration: none;
     margin-top: -27%;
     padding-top: 45%;
-    padding-bottom: 5%;
-}
+    padding-bottom: 18%;
+  }
 
-h2 {
+  h2 {
     display: block; 
     width: auto;  
     transform: scaleY(0.8); 
     padding-top: 30%;
     font-family: sans-serif;
     font-size: 2.9rem;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: 0;
     position: absolute;
     right: 0;           
     top: -3%;             
-}
+  }
 
-.menu-tav {        
+  .menu-tav {        
     display: block;        
     align-items: center;
     font-size: 11px;
     font-weight: 600;
     white-space: nowrap;
     letter-spacing: 1px;
-    margin-top: 47%;
+    margin-top: 57%;
     margin-left: auto;
     margin-right: 0;
     position: absolute;
     right: 0;           
     top: -3%; 
-}
+  }
+
 
 .box1 {
     display: flex;
@@ -380,7 +381,7 @@ a .apointment  {
   color: black;
   margin: 50px auto;
   margin-bottom: 40px;
-  margin-left: -30px;
+  margin-left: -15px;
   width: 110%;      
   max-width: 1000px; 
 }
