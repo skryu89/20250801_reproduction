@@ -36,7 +36,7 @@ function updateSlide() {
     visual.style.transform = 'translateX(0px)';
   } else if (windowWidth <= maxWidth) {
     const ratio = (windowWidth - minWidth) / (maxWidth - minWidth);
-    const maxSlide = 200; 
+    const maxSlide = 50; 
     visual.style.transform = `translateX(${ratio * maxSlide}px)`;
   } else {
     visual.style.transform = 'translateX(0px)'; 
