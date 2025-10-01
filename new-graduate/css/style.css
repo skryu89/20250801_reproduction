@@ -1219,7 +1219,7 @@ body {
     margin-top: 18.5%;
     margin-left: 8%;
   }
-
+  
   .menu-tav-wrapper {
     margin-top: -16.5%;
     margin-right: 30px;
@@ -1235,6 +1235,7 @@ body {
     font-weight: 600;
     white-space: nowrap;
     letter-spacing: 1px;
+    margin-top: 190px;
   }
 
   li {
@@ -1258,10 +1259,10 @@ body {
   .main-content {
     background-color: #FCF9F4;
   }
-
+  
+  
   .slideshow-wrapper {
     position: relative;
-    top :-20px;
     width: 350px;
     height:350px;
     aspect-ratio: 640 / 427;
@@ -1269,7 +1270,6 @@ body {
     overflow-x: hidden;
   }
 
-  
   .slide1 {
     position: absolute;
     width: 130%;
