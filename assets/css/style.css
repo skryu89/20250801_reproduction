@@ -483,83 +483,83 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     font-size: 20px;
     font-weight: 700;
    }
-
+  
+  
   .home_news {
     display: flex;
     align-items: center; 
     width: 100%;
-    height: 100px;
     max-width: 767px; 
     margin: 0 auto; 
-    margin-top: -30px;
+    margin-top: -100px;
     background-color: #fff;
   }
 
-  .news_list1 {
-    margin: 0 auto;
-    margin-top: -50px;
-  }
-
-  .news_list1 a {
+  .news_summary a {
+    width: 50px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 20px; 
+    text-decoration: none;
     background-color: #D92B44;
     color: #fff;
     font-weight: bold;
     font-size: 10px; 
+    letter-spacing: 0.2vw;
     white-space: nowrap;
     z-index: 2; 
     position: relative;
   }
 
-  .news_list2 {
-    width: 100%;
-    margin-top: -5px;
-    margin-left: -70px;
+  .news_summary .news {
+    margin-left: 40px;
   }
 
-  .date {
-    margin-left: -20px;
+  .news_list1 {
+    flex-grow: 0.5; 
+    min-width: 0;
   }
 
-  .news_list2 a {
+  .news_list1 a {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 150%;
     height: 100%;
-    padding: 2% 10%;
-    margin-top: 18%;
-    margin-left: -5%;
-    margin-bottom: 10%;
+    padding: 10px 20px;
+    margin-top: 90px;
+    margin-left: -125px;
+    margin-bottom: 30px;
     background-color: #FFEDEF;
     color: #D92B44;
     text-decoration: none;
+    list-style: none;
     overflow: hidden; 
     border-radius: 30px;
     z-index: 1;
     position: relative;
+    font-size: 10px; 
   }
 
-  .news_list1 .news {
-    width: 80px;
-    text-align: left;
-    margin-left: 30px;
-    letter-spacing: 1px;
+   .news_list1 .news {
+    width: 100px;
   }
 
-  .news_list2 .date {
+  .news_list1 .date {
     font-size: 10px; 
     flex-shrink: 0; 
     white-space: nowrap; 
   }
 
-  .news_list2 .content {
-    flex-shrink: 1; 
+  .news_list1 .content {
+    font-size: 10px; 
+    flex-shrink: 1;  
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     color: black;
-    padding: 5px 0;
-    font-weight: 800;
+    font-weight: 1000;
   }
+  
 
   .hero {
     width: 100%;
@@ -1065,7 +1065,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   content: "";  
   flex: 1;             
   border-bottom: 1px solid #d40020; 
-  margin: 0 30px;
+  margin: 0 5%;
 }
 
 .buttons {
@@ -1564,7 +1564,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
       margin-top: -50px;
       background-color: #fff;
       opacity: 1.0;
-      z-index: 80;
+      z-index: 200;
    }
 
   .nav-menu ul {
@@ -1619,51 +1619,49 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     max-width: 390px; 
     margin: 0 auto; 
     background-color: #fff;
-    border-top: none;
-    border-bottom: none;
   }
 
-  .news_list1 a {
+  .news_summary a {
     display: block;
-    margin-left: 5%;
+    width: 70px;
+    margin-top: -35px;
+    padding: 5px 15px;
     border-radius: 10px; 
+    text-decoration: none;
     background-color: #D92B44;
     color: #fff;
     font-weight: bold;
-    font-size: 2.6vw; 
+    font-size: 10px; 
+    letter-spacing: 0.1vw;
     white-space: nowrap;
     z-index: 2; 
     position: relative;
   }
 
-  .news_list2 {
+  .news_summary .news {
+    margin-left: 30px;
+  }
+
+  .news_list1 {
     flex-grow: 1; 
     min-width: 0;
     margin-left: 0%; 
-    margin-top: -16.2%;
   }
 
-  .news {
-    letter-spacing: 1px;
-  }
-
-  .date {
-    margin-left: -5%;
-  }
-
-  .news_list2 a {
+  .news_list1 a {
     display: flex;
     align-items: center;
-    width: 110%;
+    width: 150%;
     height: 100%;
-    padding: 5.0% 10%;
+    padding: 5% 15%;
     margin: 0 auto;
-    margin-top: 35%;
-    margin-left: -2%;
+    margin-left: -60%;
+    margin-top: 15%;
     margin-bottom: 10%;
     background-color: #FFEDEF;
     color: #D92B44;
     text-decoration: none;
+    list-style: none;
     overflow: hidden; 
     border-radius: 30px;
     z-index: 1;
@@ -1675,13 +1673,14 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     width: 110%;
   }
 
-  .news_list2 .date {
+  .news_list1 .date {
     font-size: 2.56vw; 
     flex-shrink: 0; 
     white-space: nowrap; 
   }
 
-  .news_list2 .content {
+  .news_list1 .content {
+    font-size: 2.56vw; 
     flex-shrink: 1; 
     margin-left: 1em; 
     white-space: nowrap;
@@ -1700,7 +1699,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   .visual-area {
     position: relative;
     z-index: 1;
-    top: -10%;
+    top: -3%;
     left: 0%;
     width: 100%;      
     max-width: 100%;   
@@ -1723,9 +1722,9 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     z-index: 1;
     width: 80%;
     height: auto;
-    top: 100%;
+    top: 50%;
     right: 16%; 
-    margin-top: 33px;
+    margin-top: 28px;
     font-weight: 600;
     font-size: 4.8vw; 
     letter-spacing: 0.1vw;
@@ -1739,8 +1738,9 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     z-index: 1;
     width: 100%;
     height: auto;
-    top: -50%;
+    top: 50%;
     left: 1%;
+    margin-top: 12%;
     color: #b9b6b6;
     font-family: 'Roboto Flex', sans-serif;
     font-style: oblique;
@@ -1748,7 +1748,6 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     font-size: 12vw; 
     letter-spacing: 0.48vw;
     white-space: nowrap;
-    transform: scaleY(0.8);
   }
 
   .letter {
@@ -1827,8 +1826,8 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     font-size: 3.4vw; 
     letter-spacing: 1.5px;
     text-align: left;
-    margin-top: -180px;
-    margin-left: 190px;
+    margin-top: -170px;
+    margin-left: 290px;
     writing-mode: vertical-rl;
     text-decoration: underline; 
     text-underline-position: under left;
@@ -1839,12 +1838,11 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 
   .writings {
-    border-top: none;
-    border-bottom: none;
     background-color: #fff;
     width: 100%;
     margin-top: -10px;
     padding: 50px 0;
+    padding-bottom: 250px;
   }
 
   .writing {
@@ -1864,12 +1862,12 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   }
 
   img.men, img.trees, img.pencil, img.the-future, img.message {
-    max-width: 90%; 
+    max-width: 100%; 
     height: auto; 
   }
 
-  img.men { left: 7.7%; top: 600px; width: 100%; position: absolute; z-index: -10;}
-  img.trees { left:-25.9%; top: 580px; width: 100%; position: absolute;  z-index: -30;}
+  img.men { left: 1%; top: 600px; width: 120%; position: absolute; z-index: -10;}
+  img.trees { left: 0.1%; top: 600px; width: 100%; position: absolute;  z-index: -30;}
   img.pencil { display: none; }
   img.the-future { display: none; }
   img.message { display: none; }
@@ -1880,7 +1878,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   width: 100%;
   height: 300px;
   position: relative;
-  top: -80px;
+  top: 50px;
   z-index: 50;
  }
 
@@ -2172,6 +2170,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: black;
   margin: 50px auto;
   margin-bottom: 40px;
+  margin-left: -20px;
 }
 
 
@@ -2180,7 +2179,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   content: "";               
   border-bottom: 1px solid #d40020; 
   width: 90px;
-  margin: 0 25px;
+  margin: 0 5%;
 }
 
 .buttons {
@@ -2492,7 +2491,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 
 .logo-logo {
   width: 80%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .location {
