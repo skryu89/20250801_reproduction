@@ -937,24 +937,47 @@ a .apointment  {
    }
 
    
-  .Requirements {
+   .Requirements {
+    position: relative;
     background-color: #D92B44;
     color: #fff;
     height: auto;
     text-decoration: none;
-    margin-top: -80px;
-  }
+    margin-top: -27%;
+    padding-top: 45%;
+    padding-bottom: 18%;
+   }
 
-  h2 {
-    display: inline-block;   
+    h2 {
+    display: block; 
+    width: auto;  
     transform: scaleY(0.8); 
-    padding-top: 15%;
+    padding-top: 30%;
     font-family: sans-serif;
     font-size: 2.9rem;
-    margin-top: 18.5%;
-    margin-left: 8%;
-  }
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: 0;
+    position: absolute;
+    right: 0;           
+    top: -3%;             
+   }
 
+   .menu-tav {        
+    display: block;        
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    margin-top: 57%;
+    margin-left: auto;
+    margin-right: 2%;
+    position: absolute;
+    right: 0;           
+    top: -3%; 
+   }
+  
   .menu-tav-wrapper {
     margin-top: -16.5%;
     margin-right: 30px;
