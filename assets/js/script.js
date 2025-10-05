@@ -86,3 +86,4 @@ document.addEventListener('DOMContentLoaded', function() {
       recruitLink2.classList.remove('clicked');
     }
 });
+
