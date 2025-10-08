@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function applyZoomScale() {
+/*function applyZoomScale() {
   const zoom = window.devicePixelRatio;
   const visual = document.querySelector('.visual-area');
   if (!visual) return;
@@ -103,4 +103,4 @@ function applyZoomScale() {
 
 // 読み込み・リサイズ時に適用
 applyZoomScale();
-window.addEventListener('resize', applyZoomScale);
+window.addEventListener('resize', applyZoomScale);*/
