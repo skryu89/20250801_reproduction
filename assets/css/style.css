@@ -81,7 +81,7 @@ body {
 }
 
 .visual-area {
-  width: 80%;
+  width: 100%;
   aspect-ratio: 1367 / 800;
   max-height: 100vh;
   margin: 20px auto;
@@ -89,8 +89,8 @@ body {
   top: 80px;
   background: #fff;
   overflow: hidden;
-  display: grid; 
-  place-items: center;
+  transition: transform 0.3s ease;
+  transform-origin: center center; 
 }
 
 .NEW-MID,
@@ -913,6 +913,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   font-style: italic;
   color: #fff;
   margin: 0;
+  margin-left: -10px;
 }
 
 .rewarding1, .rewarding2 {
@@ -924,6 +925,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   background-color: #fff;
   white-space: nowrap;
   margin-top: 5px; 
+  margin-left: -10px;
   width: fit-content; 
 }
 
@@ -934,6 +936,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
 .rewarding2 {
   margin-top: -4%;
 }
+
 
 .circle-container {
   width: 50px;
@@ -956,7 +959,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   position: absolute;
   bottom: -50px;
-  left: 20px;  
+  left: 0px;  
 }
 
 .company-seniors .slick-slide {
@@ -1020,13 +1023,18 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   z-index: -5;   
 }
 
+.slogan {
+  position: relative;
+  z-index: 1;
+}
+
 
 .slogan svg {
+  display: inline-block;
   width: 55%;
-  margin-top: 110px;
   height: 40px;
+  margin-top: 110px;
   position: relative;
-  top: 0%;
   left: 18%;
   z-index: 1;
 }
@@ -1036,7 +1044,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   font-size: 25px;
   font-weight: 500;
- 
+  position: absolute;
+  top: 67%;
+  left: 75%;
+  z-index: 1;
 }
 
 .word2 {
@@ -1045,6 +1056,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   letter-spacing: 3px;
   font-size: 35px;
   font-weight: 600;
+  position: absolute;
+  top: 92%;
+  left: 15%;
+  z-index: 1;
 }
 
 
@@ -1053,6 +1068,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   font-size: 25px;
   font-weight: 500;
+  position: absolute;
+  top: 97%;
+  left: 38%;
+  z-index: 1;
 }
 
 
@@ -1062,6 +1081,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   font-size: 45px;
   letter-spacing: 3px;
   font-weight: 700;
+  position: absolute;
+  top: 86%;
+  left: 47%;
+  z-index: 1;
 }
 
 
@@ -1071,6 +1094,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   font-size: 25px;
   letter-spacing: 5px;
   font-weight: 700;
+  position: absolute;
+  top: 98%;
+  left: 75%;
+  z-index: 1;
 }
 
 
@@ -1079,6 +1106,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   font-size: 35px;
   font-weight: 700;
+  position: absolute;
+  top: 122%;
+  left: 29%;
+  z-index: 1;
 }
 
 
@@ -1087,8 +1118,11 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   font-size: 30px;
   font-weight: 700;
+  position: absolute;
+  top: 125%;
+  left: 40%;
+  z-index: 1;
 }
-
 
 
 .requirements {
@@ -1780,9 +1814,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     z-index: 1;
     width: 80%;
     height: auto;
-    top: 50%;
-    right: 16%; 
-    margin-top: 28px;
+    margin-top: -20px;
     font-weight: 600;
     font-size: 4.8vw; 
     letter-spacing: 0.1vw;
@@ -1796,9 +1828,8 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     z-index: 1;
     width: 100%;
     height: auto;
-    top: 50%;
-    left: 1%;
-    margin-top: 12%;
+    margin-top: -10px;
+    margin-left: 5px;
     color: #b9b6b6;
     font-family: 'Roboto Flex', sans-serif;
     font-style: oblique;
@@ -1924,7 +1955,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
     height: auto; 
   }
 
-  img.men { left: 1%; top: 600px; width: 120%; position: absolute; z-index: -10;}
+  img.men { left: -0.3%; top: 600px; width: 120%; position: absolute; z-index: -10;}
   img.trees { left: 0.1%; top: 600px; width: 100%; position: absolute;  z-index: -30;}
   img.pencil { display: none; }
   img.the-future { display: none; }
@@ -2035,6 +2066,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   font-style: italic;
   color: #fff;
   margin: 0;
+  margin-left: -10px;
 }
 
 .rewarding1, .rewarding2 {
@@ -2046,6 +2078,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   background-color: #fff;
   white-space: nowrap;
   margin-top: 5px; 
+  margin-left: -10px;
   width: fit-content; 
 }
 
@@ -2078,7 +2111,7 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   position: absolute;
   bottom: -50px;
-  left: 20px;  
+  left: 0px;  
 }
 
 .company-seniors .slick-slide {
@@ -2141,13 +2174,17 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   z-index: -5;   
 }
 
+.slogan {
+  position: relative;
+  z-index: 1;
+}
+
 
 .slogan svg {
+  display: inline-block;
   width: 55%;
-  margin-top: 110px;
   height: 40px;
   position: relative;
-  left: 18%;
   z-index: 1;
 }
 
@@ -2156,6 +2193,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   font-size: 25px;
   font-weight: 500;
+  position: absolute;
+  top: 67%;
+  left: 75%;
+  z-index: 1;
 }
 
 .word2 {
@@ -2164,6 +2205,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   letter-spacing: 3px;
   font-size: 35px;
   font-weight: 600;
+  position: absolute;
+  top: 92%;
+  left: 15%;
+  z-index: 1;
 }
 
 
@@ -2172,6 +2217,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   font-size: 25px;
   font-weight: 500;
+  position: absolute;
+  top: 97%;
+  left: 38%;
+  z-index: 1;
 }
 
 
@@ -2181,6 +2230,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   font-size: 45px;
   letter-spacing: 3px;
   font-weight: 700;
+  position: absolute;
+  top: 86%;
+  left: 47%;
+  z-index: 1;
 }
 
 
@@ -2190,6 +2243,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   font-size: 25px;
   letter-spacing: 5px;
   font-weight: 700;
+  position: absolute;
+  top: 98%;
+  left: 75%;
+  z-index: 1;
 }
 
 
@@ -2198,6 +2255,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   font-size: 35px;
   font-weight: 700;
+  position: absolute;
+  top: 122%;
+  left: 29%;
+  z-index: 1;
 }
 
 
@@ -2206,6 +2267,10 @@ img.message { right: 5%; top: 1000px; width: 50%; }
   color: #fff;
   font-size: 30px;
   font-weight: 700;
+  position: absolute;
+  top: 125%;
+  left: 40%;
+  z-index: 1;
 }
 
 

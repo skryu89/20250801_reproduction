@@ -87,3 +87,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function applyZoomScale() {
+  const zoom = window.devicePixelRatio;
+  const visual = document.querySelector('.visual-area');
+  if (!visual) return;
+
+  // 100% の時はスケール 1、それ以外はズーム率に合わせる
+  if (zoom === 2) {
+    visual.style.transform = 'scale(1)';
+  } else {
+    // ズームが 1.25 (125%) なら 0.8倍に縮めるなど
+    visual.style.transform = `scale(${5 / zoom})`;
+  }
+}
+
+// 読み込み・リサイズ時に適用
+applyZoomScale();
+window.addEventListener('resize', applyZoomScale);
